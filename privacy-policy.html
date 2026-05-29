@@ -1,47 +1,368 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TankLog Aquascaper — Privacy Policy</title>
+  <title>TankLog — Privacy Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #cbd5e1; line-height: 1.7; padding: 40px 20px 80px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #cbd5e1;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
     .wrap { max-width: 640px; margin: 0 auto; }
     h1 { font-size: 1.6rem; font-weight: 800; color: #f1f5f9; margin-bottom: 6px; }
-    .sub { font-size: 0.85rem; color: #64748b; margin-bottom: 40px; }
+    .sub { font-size: 0.85rem; color: #64748b; margin-bottom: 16px; }
     h2 { font-size: 1rem; font-weight: 700; color: #22d3ee; margin: 32px 0 10px; text-transform: uppercase; letter-spacing: 0.06em; }
     p { font-size: 0.92rem; color: #94a3b8; margin-bottom: 12px; }
-    .badge { display: inline-block; background: rgba(34,211,238,0.1); border: 1px solid rgba(34,211,238,0.3); color: #22d3ee; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 32px; }
+    ul { margin: 0 0 12px 20px; }
+    ul li { font-size: 0.92rem; color: #94a3b8; margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.3);
+      color: #22d3ee;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
     hr { border: none; border-top: 1px solid #1e293b; margin: 32px 0; }
     a { color: #22d3ee; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Language switcher */
+    .lang-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 32px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid #1e293b;
+      color: #64748b;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .lang-btn:hover { border-color: #22d3ee; color: #22d3ee; }
+    .lang-btn.active { background: rgba(34,211,238,0.1); border-color: #22d3ee; color: #22d3ee; }
+
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>TankLog Aquascaper</h1>
-    <p class="sub">Privacy Policy &middot; Last updated April 2026</p>
-    <span class="badge">Your data never leaves your device</span>
-    <h2>Overview</h2>
-    <p>TankLog Aquascaper is a personal aquarium tracking app built for hobbyists. We take your privacy seriously. This policy explains what data the app handles and how.</p>
-    <h2>Data Collection</h2>
-    <p>TankLog does not collect, transmit, or share any personal data. The app does not connect to any external servers or analytics services.</p>
-    <p>All data you enter — including tank parameters, water test results, feeding logs, animal and plant records, and tank settings — is stored entirely on your device and is never sent anywhere.</p>
-    <h2>Data Storage</h2>
-    <p>All app data is stored locally on your device using standard iOS storage. This data is included in your device's iCloud backup if you have iCloud backup enabled, which is controlled entirely by your device settings.</p>
-    <p>You can export your data at any time as a JSON file using the Export feature, and re-import it if you ever reinstall the app.</p>
-    <h2>Photos</h2>
-    <p>If you add photos to animal or plant entries, those photos are stored locally on your device only. They are never uploaded or transmitted anywhere. Photos are compressed automatically to reduce storage size.</p>
-    <h2>Third-Party Services</h2>
-    <p>TankLog does not use any third-party analytics, advertising, or tracking services. No SDKs that collect data are included in the app.</p>
-    <h2>Children's Privacy</h2>
-    <p>TankLog does not collect any information from anyone, including children under the age of 13.</p>
-    <h2>Changes to This Policy</h2>
-    <p>If this privacy policy changes in the future, the updated version will be posted at this URL with a revised date.</p>
-    <h2>Contact</h2>
-    <p>If you have any questions, contact us at <a href="mailto:christopher.dominguez@gmail.com">christopher.dominguez@gmail.com</a>.</p>
-    <hr>
-    <p style="font-size:0.75rem; color:#475569;">&copy; 2026 TankLog Aquascaper. All rights reserved.</p>
+    <h1>TankLog</h1>
+
+    <div class="lang-bar">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('de')">Deutsch</button>
+      <button class="lang-btn" onclick="setLang('fr')">Français</button>
+      <button class="lang-btn" onclick="setLang('es')">Español</button>
+      <button class="lang-btn" onclick="setLang('it')">Italiano</button>
+      <button class="lang-btn" onclick="setLang('nl')">Nederlands</button>
+      <button class="lang-btn" onclick="setLang('pt')">Português</button>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang-section active" id="lang-en">
+      <p class="sub">Privacy Policy · Last updated May 2026</p>
+      <span class="badge">Your data never leaves your device</span>
+      <h2>Overview</h2>
+      <p>TankLog is a personal aquarium tracking app built for hobbyists. We take your privacy seriously. This policy explains what data the app handles and how.</p>
+      <h2>Data Collection</h2>
+      <p>TankLog does not collect, transmit, or share any personal data. The app does not connect to any external servers or analytics services.</p>
+      <p>All data you enter — including tank parameters, water test results, feeding logs, and tank settings — is stored entirely on your device and is never sent anywhere.</p>
+      <h2>Data Storage</h2>
+      <p>All app data is stored locally on your device using standard iOS storage. This data is included in your device's iCloud backup if you have iCloud backup enabled, which is controlled entirely by your device settings.</p>
+      <h2>Third-Party Services</h2>
+      <p>TankLog does not use any third-party analytics, advertising, or tracking services. No SDKs that collect data are included in the app.</p>
+      <h2>Home Assistant Integration (Optional)</h2>
+      <p>TankLog includes an optional integration with Home Assistant, a local home automation platform. If you choose to enable this feature, the app communicates only with your own local Home Assistant server on your home network. No data is sent to any external service.</p>
+      <h2>Data Controller</h2>
+      <p>TankLog is developed and maintained by Christopher Dominguez. For any privacy-related questions, use the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback).</p>
+      <h2>Legal Basis for Processing (GDPR)</h2>
+      <p>For users in the European Economic Area: since all data is stored exclusively on your device and never transmitted to us or any third party, we do not process your personal data in the GDPR sense. You retain full control of your data at all times.</p>
+      <h2>Your Rights (GDPR)</h2>
+      <p>If you are located in the European Economic Area, you have the following rights regarding your data:</p>
+      <ul>
+        <li><strong>Right of access</strong> — all your data is visible directly within the app.</li>
+        <li><strong>Right to erasure</strong> — you can delete any tank and all its data from within the app at any time.</li>
+        <li><strong>Right to data portability</strong> — you can export all your data as a JSON file using the Export function in Settings.</li>
+        <li><strong>Right to lodge a complaint</strong> — you may contact your local data protection authority if you have concerns.</li>
+      </ul>
+      <p>Because your data never leaves your device, these rights are exercised directly through the app itself.</p>
+      <h2>Children's Privacy</h2>
+      <p>TankLog does not collect any information from anyone, including children under the age of 13.</p>
+      <h2>Changes to This Policy</h2>
+      <p>If this privacy policy changes in the future, the updated version will be posted at this URL with a revised date.</p>
+      <h2>Contact</h2>
+      <p>If you have any questions about this privacy policy, please use the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback).</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. All rights reserved.</p>
+    </div>
+
+    <!-- GERMAN -->
+    <div class="lang-section" id="lang-de">
+      <p class="sub">Datenschutzrichtlinie · Letzte Aktualisierung Mai 2026</p>
+      <span class="badge">Deine Daten verlassen niemals dein Gerät</span>
+      <h2>Übersicht</h2>
+      <p>TankLog ist eine persönliche Aquarium-Tracking-App für Hobbyisten. Wir nehmen deine Privatsphäre ernst. Diese Richtlinie erklärt, welche Daten die App verarbeitet und wie.</p>
+      <h2>Datenerhebung</h2>
+      <p>TankLog sammelt, übermittelt oder teilt keine personenbezogenen Daten. Die App stellt keine Verbindung zu externen Servern oder Analysediensten her.</p>
+      <p>Alle von dir eingegebenen Daten — einschließlich Aquariumparameter, Wassertestergebnisse, Fütterungsprotokolle und Aquariumeinstellungen — werden vollständig auf deinem Gerät gespeichert und nirgendwo hin gesendet.</p>
+      <h2>Datenspeicherung</h2>
+      <p>Alle App-Daten werden lokal auf deinem Gerät gespeichert. Diese Daten sind in der iCloud-Sicherung deines Geräts enthalten, wenn du die iCloud-Sicherung aktiviert hast — dies wird vollständig über deine Geräteeinstellungen gesteuert.</p>
+      <h2>Dienste von Drittanbietern</h2>
+      <p>TankLog verwendet keine Analyse-, Werbe- oder Tracking-Dienste von Drittanbietern. In der App sind keine SDKs enthalten, die Daten sammeln.</p>
+      <h2>Home Assistant Integration (Optional)</h2>
+      <p>TankLog enthält eine optionale Integration mit Home Assistant, einer lokalen Heimautomatisierungsplattform. Wenn du diese Funktion aktivierst, kommuniziert die App ausschließlich mit deinem eigenen lokalen Home Assistant-Server in deinem Heimnetzwerk. Es werden keine Daten an externe Dienste gesendet.</p>
+      <h2>Verantwortliche Stelle</h2>
+      <p>TankLog wird von Christopher Dominguez entwickelt und gepflegt. Bei datenschutzbezogenen Fragen: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <h2>Rechtsgrundlage der Verarbeitung (DSGVO)</h2>
+      <p>Für Nutzer im Europäischen Wirtschaftsraum: Da alle Daten ausschließlich auf deinem Gerät gespeichert und niemals an uns oder Dritte übermittelt werden, verarbeiten wir deine personenbezogenen Daten nicht im Sinne der DSGVO. Du behältst jederzeit die volle Kontrolle über deine Daten.</p>
+      <h2>Deine Rechte (DSGVO)</h2>
+      <p>Wenn du dich im Europäischen Wirtschaftsraum befindest, hast du folgende Rechte bezüglich deiner Daten:</p>
+      <ul>
+        <li><strong>Auskunftsrecht</strong> — alle deine Daten sind direkt in der App einsehbar.</li>
+        <li><strong>Recht auf Löschung</strong> — du kannst jedes Aquarium und alle zugehörigen Daten jederzeit in der App löschen.</li>
+        <li><strong>Recht auf Datenübertragbarkeit</strong> — du kannst alle deine Daten als JSON-Datei über die Exportfunktion in den Einstellungen exportieren.</li>
+        <li><strong>Beschwerderecht</strong> — du kannst dich bei deiner örtlichen Datenschutzbehörde beschweren, wenn du Bedenken hast.</li>
+      </ul>
+      <p>Da deine Daten dein Gerät nie verlassen, werden diese Rechte direkt über die App selbst ausgeübt.</p>
+      <h2>Datenschutz für Kinder</h2>
+      <p>TankLog sammelt keine Informationen von irgendjemandem, auch nicht von Kindern unter 13 Jahren.</p>
+      <h2>Änderungen dieser Richtlinie</h2>
+      <p>Sollte sich diese Datenschutzrichtlinie in Zukunft ändern, wird die aktualisierte Version unter dieser URL mit einem neuen Datum veröffentlicht.</p>
+      <h2>Kontakt</h2>
+      <p>Bei Fragen zu dieser Datenschutzrichtlinie: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. Alle Rechte vorbehalten.</p>
+    </div>
+
+    <!-- FRENCH -->
+    <div class="lang-section" id="lang-fr">
+      <p class="sub">Politique de confidentialité · Dernière mise à jour mai 2026</p>
+      <span class="badge">Vos données ne quittent jamais votre appareil</span>
+      <h2>Vue d'ensemble</h2>
+      <p>TankLog est une application personnelle de suivi d'aquarium conçue pour les passionnés. Nous prenons votre vie privée au sérieux. Cette politique explique quelles données l'application traite et comment.</p>
+      <h2>Collecte de données</h2>
+      <p>TankLog ne collecte, ne transmet ni ne partage aucune donnée personnelle. L'application ne se connecte à aucun serveur externe ni service d'analyse.</p>
+      <p>Toutes les données que vous saisissez — y compris les paramètres de l'aquarium, les résultats des tests d'eau, les journaux d'alimentation et les réglages — sont entièrement stockées sur votre appareil et ne sont jamais envoyées nulle part.</p>
+      <h2>Stockage des données</h2>
+      <p>Toutes les données de l'application sont stockées localement sur votre appareil. Ces données sont incluses dans la sauvegarde iCloud de votre appareil si vous avez activé la sauvegarde iCloud, ce qui est entièrement contrôlé par les réglages de votre appareil.</p>
+      <h2>Services tiers</h2>
+      <p>TankLog n'utilise aucun service tiers d'analyse, de publicité ou de suivi. Aucun SDK de collecte de données n'est inclus dans l'application.</p>
+      <h2>Intégration Home Assistant (Optionnel)</h2>
+      <p>TankLog inclut une intégration optionnelle avec Home Assistant, une plateforme domotique locale. Si vous activez cette fonctionnalité, l'application communique uniquement avec votre propre serveur Home Assistant local sur votre réseau domestique. Aucune donnée n'est envoyée à un service externe.</p>
+      <h2>Responsable du traitement</h2>
+      <p>TankLog est développé et maintenu par Christopher Dominguez. Pour toute question relative à la confidentialité : the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <h2>Base juridique du traitement (RGPD)</h2>
+      <p>Pour les utilisateurs de l'Espace économique européen : étant donné que toutes les données sont stockées exclusivement sur votre appareil et ne sont jamais transmises à nous ou à un tiers, nous ne traitons pas vos données personnelles au sens du RGPD. Vous gardez le contrôle total de vos données à tout moment.</p>
+      <h2>Vos droits (RGPD)</h2>
+      <p>Si vous êtes situé dans l'Espace économique européen, vous disposez des droits suivants concernant vos données :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> — toutes vos données sont visibles directement dans l'application.</li>
+        <li><strong>Droit à l'effacement</strong> — vous pouvez supprimer tout aquarium et toutes ses données depuis l'application à tout moment.</li>
+        <li><strong>Droit à la portabilité</strong> — vous pouvez exporter toutes vos données en fichier JSON via la fonction Exporter dans les Réglages.</li>
+        <li><strong>Droit de déposer une plainte</strong> — vous pouvez contacter votre autorité locale de protection des données si vous avez des préoccupations.</li>
+      </ul>
+      <p>Comme vos données ne quittent jamais votre appareil, ces droits s'exercent directement via l'application elle-même.</p>
+      <h2>Vie privée des enfants</h2>
+      <p>TankLog ne recueille aucune information de qui que ce soit, y compris des enfants de moins de 13 ans.</p>
+      <h2>Modifications de cette politique</h2>
+      <p>Si cette politique de confidentialité est modifiée à l'avenir, la version mise à jour sera publiée à cette URL avec une date révisée.</p>
+      <h2>Contact</h2>
+      <p>Pour toute question concernant cette politique de confidentialité : the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. Tous droits réservés.</p>
+    </div>
+
+    <!-- SPANISH -->
+    <div class="lang-section" id="lang-es">
+      <p class="sub">Política de privacidad · Última actualización mayo 2026</p>
+      <span class="badge">Tus datos nunca salen de tu dispositivo</span>
+      <h2>Descripción general</h2>
+      <p>TankLog es una aplicación personal de seguimiento de acuarios creada para aficionados. Nos tomamos muy en serio tu privacidad. Esta política explica qué datos maneja la aplicación y cómo.</p>
+      <h2>Recopilación de datos</h2>
+      <p>TankLog no recopila, transmite ni comparte ningún dato personal. La aplicación no se conecta a ningún servidor externo ni servicio de análisis.</p>
+      <p>Todos los datos que introduces — incluidos los parámetros del acuario, los resultados de los tests del agua, los registros de alimentación y los ajustes — se almacenan íntegramente en tu dispositivo y nunca se envían a ningún lugar.</p>
+      <h2>Almacenamiento de datos</h2>
+      <p>Todos los datos de la aplicación se almacenan localmente en tu dispositivo. Estos datos se incluyen en la copia de seguridad de iCloud de tu dispositivo si tienes activada la copia de seguridad de iCloud, lo que se controla totalmente mediante los ajustes de tu dispositivo.</p>
+      <h2>Servicios de terceros</h2>
+      <p>TankLog no utiliza servicios de análisis, publicidad o seguimiento de terceros. La aplicación no incluye ningún SDK que recopile datos.</p>
+      <h2>Integración con Home Assistant (Opcional)</h2>
+      <p>TankLog incluye una integración opcional con Home Assistant, una plataforma de domótica local. Si activas esta función, la aplicación se comunica únicamente con tu propio servidor Home Assistant local en tu red doméstica. No se envía ningún dato a ningún servicio externo.</p>
+      <h2>Responsable del tratamiento</h2>
+      <p>TankLog es desarrollado y mantenido por Christopher Dominguez. Para cualquier consulta relacionada con la privacidad: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <h2>Base jurídica del tratamiento (RGPD)</h2>
+      <p>Para usuarios del Espacio Económico Europeo: dado que todos los datos se almacenan exclusivamente en tu dispositivo y nunca se transmiten a nosotros ni a terceros, no tratamos tus datos personales en el sentido del RGPD. Conservas el control total de tus datos en todo momento.</p>
+      <h2>Tus derechos (RGPD)</h2>
+      <p>Si te encuentras en el Espacio Económico Europeo, tienes los siguientes derechos respecto a tus datos:</p>
+      <ul>
+        <li><strong>Derecho de acceso</strong> — todos tus datos son visibles directamente en la aplicación.</li>
+        <li><strong>Derecho de supresión</strong> — puedes eliminar cualquier acuario y todos sus datos desde la aplicación en cualquier momento.</li>
+        <li><strong>Derecho a la portabilidad</strong> — puedes exportar todos tus datos como archivo JSON usando la función Exportar en Ajustes.</li>
+        <li><strong>Derecho a presentar una reclamación</strong> — puedes ponerte en contacto con tu autoridad local de protección de datos si tienes alguna duda.</li>
+      </ul>
+      <p>Como tus datos nunca salen de tu dispositivo, estos derechos se ejercen directamente a través de la propia aplicación.</p>
+      <h2>Privacidad de los menores</h2>
+      <p>TankLog no recopila información de ninguna persona, incluidos los menores de 13 años.</p>
+      <h2>Cambios en esta política</h2>
+      <p>Si esta política de privacidad cambia en el futuro, la versión actualizada se publicará en esta URL con una fecha revisada.</p>
+      <h2>Contacto</h2>
+      <p>Si tienes alguna pregunta sobre esta política de privacidad: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- ITALIAN -->
+    <div class="lang-section" id="lang-it">
+      <p class="sub">Informativa sulla privacy · Ultimo aggiornamento maggio 2026</p>
+      <span class="badge">I tuoi dati non lasciano mai il tuo dispositivo</span>
+      <h2>Panoramica</h2>
+      <p>TankLog è un'applicazione personale di monitoraggio dell'acquario per appassionati. Prendiamo sul serio la tua privacy. Questa informativa spiega quali dati l'app tratta e come.</p>
+      <h2>Raccolta dati</h2>
+      <p>TankLog non raccoglie, trasmette o condivide alcun dato personale. L'applicazione non si connette a server esterni o servizi di analisi.</p>
+      <p>Tutti i dati che inserisci — inclusi i parametri dell'acquario, i risultati dei test dell'acqua, i registri di alimentazione e le impostazioni — vengono memorizzati interamente sul tuo dispositivo e non vengono mai inviati da nessuna parte.</p>
+      <h2>Archiviazione dei dati</h2>
+      <p>Tutti i dati dell'app vengono archiviati localmente sul tuo dispositivo. Questi dati sono inclusi nel backup iCloud del tuo dispositivo se hai attivato il backup iCloud, il che è controllato interamente dalle impostazioni del dispositivo.</p>
+      <h2>Servizi di terze parti</h2>
+      <p>TankLog non utilizza servizi di analisi, pubblicità o tracciamento di terze parti. Nell'app non sono inclusi SDK che raccolgono dati.</p>
+      <h2>Integrazione Home Assistant (Opzionale)</h2>
+      <p>TankLog include un'integrazione opzionale con Home Assistant, una piattaforma domotica locale. Se attivi questa funzione, l'app comunica solo con il tuo server Home Assistant locale sulla tua rete domestica. Nessun dato viene inviato a servizi esterni.</p>
+      <h2>Titolare del trattamento</h2>
+      <p>TankLog è sviluppato e mantenuto da Christopher Dominguez. Per qualsiasi domanda sulla privacy: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <h2>Base giuridica del trattamento (GDPR)</h2>
+      <p>Per gli utenti dello Spazio economico europeo: poiché tutti i dati sono memorizzati esclusivamente sul tuo dispositivo e non vengono mai trasmessi a noi o a terzi, non trattiamo i tuoi dati personali ai sensi del GDPR. Mantieni il pieno controllo dei tuoi dati in ogni momento.</p>
+      <h2>I tuoi diritti (GDPR)</h2>
+      <p>Se ti trovi nello Spazio economico europeo, hai i seguenti diritti riguardo ai tuoi dati:</p>
+      <ul>
+        <li><strong>Diritto di accesso</strong> — tutti i tuoi dati sono visibili direttamente nell'app.</li>
+        <li><strong>Diritto alla cancellazione</strong> — puoi eliminare qualsiasi acquario e tutti i suoi dati dall'app in qualsiasi momento.</li>
+        <li><strong>Diritto alla portabilità</strong> — puoi esportare tutti i tuoi dati come file JSON usando la funzione Esporta nelle Impostazioni.</li>
+        <li><strong>Diritto di reclamo</strong> — puoi contattare la tua autorità locale per la protezione dei dati in caso di dubbi.</li>
+      </ul>
+      <p>Poiché i tuoi dati non lasciano mai il tuo dispositivo, questi diritti si esercitano direttamente tramite l'app stessa.</p>
+      <h2>Privacy dei minori</h2>
+      <p>TankLog non raccoglie informazioni da nessuno, inclusi i minori di 13 anni.</p>
+      <h2>Modifiche a questa informativa</h2>
+      <p>Se questa informativa sulla privacy dovesse cambiare in futuro, la versione aggiornata verrà pubblicata a questo URL con una data aggiornata.</p>
+      <h2>Contatto</h2>
+      <p>Per qualsiasi domanda su questa informativa sulla privacy: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. Tutti i diritti riservati.</p>
+    </div>
+
+    <!-- DUTCH -->
+    <div class="lang-section" id="lang-nl">
+      <p class="sub">Privacybeleid · Laatst bijgewerkt mei 2026</p>
+      <span class="badge">Je gegevens verlaten nooit je apparaat</span>
+      <h2>Overzicht</h2>
+      <p>TankLog is een persoonlijke aquarium tracking app voor hobbyisten. We nemen je privacy serieus. Dit beleid legt uit welke gegevens de app verwerkt en hoe.</p>
+      <h2>Gegevensverzameling</h2>
+      <p>TankLog verzamelt, verzendt of deelt geen persoonlijke gegevens. De app maakt geen verbinding met externe servers of analysediensten.</p>
+      <p>Alle gegevens die je invoert — inclusief aquariumparameters, watertestresultaten, voedingslogboeken en instellingen — worden volledig op je apparaat opgeslagen en nooit ergens naartoe verzonden.</p>
+      <h2>Gegevensopslag</h2>
+      <p>Alle app-gegevens worden lokaal op je apparaat opgeslagen. Deze gegevens worden opgenomen in de iCloud-back-up van je apparaat als je iCloud-back-up hebt ingeschakeld, wat volledig wordt geregeld door de instellingen van je apparaat.</p>
+      <h2>Diensten van derden</h2>
+      <p>TankLog maakt geen gebruik van analytics-, advertentie- of volgdiensten van derden. De app bevat geen SDK's die gegevens verzamelen.</p>
+      <h2>Home Assistant integratie (Optioneel)</h2>
+      <p>TankLog bevat een optionele integratie met Home Assistant, een lokaal domoticaplatform. Als je deze functie inschakelt, communiceert de app uitsluitend met je eigen lokale Home Assistant-server op je thuisnetwerk. Er worden geen gegevens naar externe diensten verzonden.</p>
+      <h2>Verwerkingsverantwoordelijke</h2>
+      <p>TankLog wordt ontwikkeld en onderhouden door Christopher Dominguez. Voor privacygerelateerde vragen: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <h2>Wettelijke grondslag voor verwerking (AVG)</h2>
+      <p>Voor gebruikers in de Europese Economische Ruimte: aangezien alle gegevens uitsluitend op je apparaat worden opgeslagen en nooit naar ons of een derde partij worden verzonden, verwerken wij je persoonsgegevens niet in de zin van de AVG. Je behoudt te allen tijde de volledige controle over je gegevens.</p>
+      <h2>Jouw rechten (AVG)</h2>
+      <p>Als je je in de Europese Economische Ruimte bevindt, heb je de volgende rechten met betrekking tot je gegevens:</p>
+      <ul>
+        <li><strong>Recht op inzage</strong> — alle je gegevens zijn direct zichtbaar in de app.</li>
+        <li><strong>Recht op wissing</strong> — je kunt elk aquarium en alle bijbehorende gegevens op elk moment vanuit de app verwijderen.</li>
+        <li><strong>Recht op gegevensoverdraagbaarheid</strong> — je kunt alle gegevens exporteren als JSON-bestand via de Exporteren-functie in Instellingen.</li>
+        <li><strong>Recht om een klacht in te dienen</strong> — je kunt contact opnemen met je lokale gegevensbeschermingsautoriteit als je bezwaren hebt.</li>
+      </ul>
+      <p>Omdat je gegevens je apparaat nooit verlaten, worden deze rechten direct via de app zelf uitgeoefend.</p>
+      <h2>Privacy van kinderen</h2>
+      <p>TankLog verzamelt geen informatie van wie dan ook, inclusief kinderen onder de 13 jaar.</p>
+      <h2>Wijzigingen in dit beleid</h2>
+      <p>Als dit privacybeleid in de toekomst wordt gewijzigd, wordt de bijgewerkte versie op deze URL gepubliceerd met een herziene datum.</p>
+      <h2>Contact</h2>
+      <p>Voor vragen over dit privacybeleid: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. Alle rechten voorbehouden.</p>
+    </div>
+
+    <!-- BRAZILIAN PORTUGUESE -->
+    <div class="lang-section" id="lang-pt">
+      <p class="sub">Política de Privacidade · Última atualização maio de 2026</p>
+      <span class="badge">Seus dados nunca saem do seu dispositivo</span>
+      <h2>Visão Geral</h2>
+      <p>O TankLog é um aplicativo pessoal de monitoramento de aquários criado para entusiastas. Levamos sua privacidade a sério. Esta política explica quais dados o aplicativo trata e como.</p>
+      <h2>Coleta de Dados</h2>
+      <p>O TankLog não coleta, transmite ou compartilha nenhum dado pessoal. O aplicativo não se conecta a nenhum servidor externo ou serviço de análise.</p>
+      <p>Todos os dados inseridos — incluindo parâmetros do aquário, resultados de testes de água, registros de alimentação e configurações — são armazenados inteiramente no seu dispositivo e nunca são enviados a lugar algum.</p>
+      <h2>Armazenamento de Dados</h2>
+      <p>Todos os dados do aplicativo são armazenados localmente no seu dispositivo. Esses dados são incluídos no backup do iCloud do seu dispositivo se você tiver o backup do iCloud ativado, o que é controlado inteiramente pelas configurações do dispositivo.</p>
+      <h2>Serviços de Terceiros</h2>
+      <p>O TankLog não usa nenhum serviço de análise, publicidade ou rastreamento de terceiros. Não há SDKs que coletem dados incluídos no aplicativo.</p>
+      <h2>Integração com Home Assistant (Opcional)</h2>
+      <p>O TankLog inclui uma integração opcional com o Home Assistant, uma plataforma de automação residencial local. Se você ativar esse recurso, o aplicativo se comunica apenas com seu próprio servidor Home Assistant local na sua rede doméstica. Nenhum dado é enviado a serviços externos.</p>
+      <h2>Controlador de Dados</h2>
+      <p>O TankLog é desenvolvido e mantido por Christopher Dominguez. Para quaisquer dúvidas relacionadas à privacidade: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <h2>Base Legal para o Tratamento (LGPD)</h2>
+      <p>Como todos os dados são armazenados exclusivamente no seu dispositivo e nunca transmitidos a nós ou a terceiros, não tratamos seus dados pessoais. Você mantém o controle total dos seus dados a qualquer momento.</p>
+      <h2>Seus Direitos</h2>
+      <p>Você tem os seguintes direitos em relação aos seus dados:</p>
+      <ul>
+        <li><strong>Direito de acesso</strong> — todos os seus dados são visíveis diretamente no aplicativo.</li>
+        <li><strong>Direito de exclusão</strong> — você pode excluir qualquer aquário e todos os seus dados pelo aplicativo a qualquer momento.</li>
+        <li><strong>Direito à portabilidade</strong> — você pode exportar todos os seus dados como arquivo JSON usando a função Exportar nas Configurações.</li>
+      </ul>
+      <p>Como seus dados nunca saem do seu dispositivo, esses direitos são exercidos diretamente pelo próprio aplicativo.</p>
+      <h2>Privacidade de Crianças</h2>
+      <p>O TankLog não coleta nenhuma informação de ninguém, incluindo crianças com menos de 13 anos.</p>
+      <h2>Alterações a Esta Política</h2>
+      <p>Se esta política de privacidade for alterada no futuro, a versão atualizada será publicada neste URL com uma data revisada.</p>
+      <h2>Contato</h2>
+      <p>Se tiver alguma dúvida sobre esta política de privacidade: the in-app <strong>Send Feedback</strong> form (Settings → Send Feedback)</p>
+      <hr>
+      <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog. Todos os direitos reservados.</p>
+    </div>
+
   </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      event.target.classList.add('active');
+      document.documentElement.lang = lang;
+    }
+
+    // Auto-detect browser language on load
+    (function() {
+      const preferred = (navigator.language || 'en').slice(0, 2).toLowerCase();
+      const supported = ['en', 'de', 'fr', 'es', 'it', 'nl', 'pt'];
+      const lang = supported.includes(preferred) ? preferred : 'en';
+      if (lang !== 'en') {
+        document.getElementById('lang-en').classList.remove('active');
+        document.querySelector('.lang-btn.active').classList.remove('active');
+        document.getElementById('lang-' + lang).classList.add('active');
+        document.querySelector('[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+        document.documentElement.lang = lang;
+      }
+    })();
+  </script>
 </body>
 </html>
