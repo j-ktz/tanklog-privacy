@@ -47,19 +47,20 @@
     <!-- ENGLISH -->
     <div class="lang-section" id="lang-en">
       <p class="sub">Privacy Policy · Last updated October 2026</p>
-      <span class="badge">Free and local by default · Cloud Sync is optional</span>
+      <span class="badge">Free and local by default · Cloud Sync uses your own iCloud</span>
       <p>TankLog: Aquascape (“TankLog”) is made by <strong>Chris Dominguez</strong>, who is responsible for your data (the “controller” under data protection law). Questions or requests: <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>The short version</h2>
       <ul>
-      <li>TankLog is free and works without an account. <strong>Without Cloud Sync, your data never leaves your device.</strong></li>
-      <li><strong>Cloud Sync</strong> is optional and paid once. If you choose it, we store a copy of your tanks <strong>only to back them up and sync your devices</strong>.</li>
+      <li>TankLog is free and works without an account. <strong>Your tanks are stored on your device.</strong></li>
+      <li><strong>Cloud Sync</strong> is optional and paid once. It keeps a copy of your tanks in <strong>your own iCloud</strong>, so they are backed up and the same on your devices. <strong>TankLog cannot see it.</strong></li>
+      <li>The only thing we ever receive is <strong>feedback you choose to send us</strong>.</li>
       <li>We <strong>never sell your data, share it or use it to market to you</strong>. No ads, no tracking, no analytics.</li>
       <li>You can <strong>export or delete</strong> your data at any time.</li>
       </ul>
 
-      <h2>Using TankLog without Cloud Sync</h2>
-      <p>Everything you enter (tanks, test results, logs, notes, schedules, livestock, plants, equipment, photos and settings) is stored <strong>only on your device</strong>. We cannot see it.</p>
+      <h2>Your data on your device</h2>
+      <p>Everything you enter (tanks, test results, logs, notes, schedules, livestock, plants, equipment, photos and settings) is stored <strong>on your device</strong>. We cannot see it.</p>
       <ul>
       <li><strong>Reminders</strong> are scheduled by iOS on your device. No server is involved.</li>
       <li><strong>Photos</strong> are added only when you choose them from your camera or photo library, and they stay in the app.</li>
@@ -70,33 +71,29 @@
       </ul>
 
       <h2>Cloud Sync (optional)</h2>
-      <p><strong>What we store:</strong></p>
       <ul>
-      <li>Your tanks and everything in them, including photos.</li>
-      <li>Your app settings: language, units, theme and time format.</li>
-      <li>An account ID from Sign in with Apple. We ask Apple for <strong>no name and no email address</strong>, so we do not have them.</li>
-      <li>Technical details needed to keep you signed in securely, such as the IP address and device type of your sign-in session. These are deleted with your account.</li>
+      <li><strong>What is synced:</strong> your tanks and everything in them, including photos, and your app settings (language, units, theme and time format).</li>
+      <li><strong>Where:</strong> in a private area of <strong>your own iCloud</strong>, under your Apple Account, using Apple’s CloudKit. It counts toward your iCloud storage. <strong>We have no servers for your tank data and cannot access your iCloud.</strong> Apple stores it under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>, encrypted in transit and on Apple’s servers.</li>
+      <li><strong>Which iCloud account:</strong> so that data from two iCloud accounts is never mixed, TankLog keeps an anonymous ID that iCloud provides for TankLog alone. It stays on your device and we never receive it.</li>
+      <li><strong>Why:</strong> only to back up your tanks and keep them the same on your devices.</li>
       </ul>
-      <p><strong>Why:</strong> only to back up your data and keep it the same on your devices. Legal basis: providing the service you bought (GDPR Art. 6(1)(b)).</p>
-      <p><strong>Where:</strong> with Supabase, on servers in <strong>London, United Kingdom</strong>. Supabase’s server logs, which include IP addresses, are kept for up to 7 days.</p>
-      <p><strong>Who can see it:</strong> access rules ensure that only your signed-in account can read your data and photos. As the operator, Chris can technically access the database. He looks at your data <strong>only if you ask for help and give permission</strong>, or if the law requires it.</p>
       <p><strong>How long:</strong> until you delete it.</p>
       <ul>
-      <li><strong>Deleting a tank</strong> removes its contents and photos from the cloud. A small marker (an ID and the time of deletion, with no content) stays so your other devices know to delete it too.</li>
-      <li><strong>Settings → Cloud Sync → Delete Account &amp; Data</strong> removes your account, every synced tank, your settings and your photos immediately. Copies in Supabase’s daily backups are gone <strong>within 7 days</strong>.</li>
-      <li><strong>Signing out</strong> pauses sync. Your cloud data stays until you delete it.</li>
+      <li><strong>Deleting a tank</strong> removes its contents and photos from your iCloud. A small marker (an ID and the time of deletion, with no content) stays so your other devices know to delete it too.</li>
+      <li><strong>Settings → Cloud Sync → Delete TankLog data from iCloud</strong> removes everything TankLog stored in your iCloud, on all your devices. The tanks on your device stay.</li>
+      <li><strong>Turning sync off</strong> pauses it. Your iCloud copy stays until you delete it.</li>
       </ul>
 
       <h2>Buying Cloud Sync</h2>
       <ul>
       <li><strong>Apple</strong> processes the payment. We never see your card details or your Apple Account.</li>
-      <li><strong>RevenueCat</strong> (USA) confirms your purchase so that Cloud Sync unlocks on your devices. It receives the purchase details, an anonymous ID created on your device, and basic technical information (app version, device type, country). TankLog contacts RevenueCat <strong>only</strong> when you buy or restore Cloud Sync, or on a device that has bought it. Free users never contact it.</li>
-      <li>Legal basis: providing the service you bought (GDPR Art. 6(1)(b)). RevenueCat keeps purchase records under its own policy; ask us and we will have them deleted.</li>
+      <li>TankLog asks Apple, <strong>on your device</strong>, whether you have bought Cloud Sync, so it can unlock it. We receive no personal information from this; Apple gives developers only summary sales reports.</li>
+      <li>For a <strong>refund</strong>, use Apple’s <a href="https://reportaproblem.apple.com">Report a Problem</a> page.</li>
       </ul>
 
       <h2>Sending feedback</h2>
       <ul>
-      <li><strong>Send Feedback</strong> sends the type of message, the subject, your message and the app version. It does not send your name or email address unless you type them. The form runs through <strong>Formspree</strong> (USA), which may log technical details such as your IP address to block spam, and it is delivered to our support inbox at <strong>Gmail</strong> (Google).</li>
+      <li><strong>Send Feedback</strong> sends the type of message, the subject, your message, the app version and, if you choose to add it, your email address, which we use only to reply to you. It does not send your name unless you type it. The form runs through <strong>Formspree</strong> (USA), which may log technical details such as your IP address to block spam, and it is delivered to our support inbox at <strong>Gmail</strong> (Google).</li>
       <li>If you <strong>email us</strong>, we see your email address and your message.</li>
       <li>We keep messages only as long as we need them to help you and improve the app. Legal basis: our legitimate interest in answering you and improving TankLog (GDPR Art. 6(1)(f)).</li>
       </ul>
@@ -104,23 +101,21 @@
       <h2>Who handles your data</h2>
       <table>
       <tr><th>Service</th><th>What for</th><th>Where</th></tr>
-      <tr><td>Supabase</td><td>Cloud Sync storage and sign-in</td><td>United Kingdom</td></tr>
-      <tr><td>Apple</td><td>Sign in with Apple and payments</td><td>Worldwide</td></tr>
-      <tr><td>RevenueCat</td><td>Confirms Cloud Sync purchases</td><td>USA</td></tr>
+      <tr><td>Apple</td><td>iCloud (Cloud Sync storage) and payments</td><td>Worldwide</td></tr>
       <tr><td>Formspree</td><td>Delivers in-app feedback</td><td>USA</td></tr>
       <tr><td>Google (Gmail)</td><td>Support inbox</td><td>USA</td></tr>
       </table>
-      <p>The EU recognises the United Kingdom as giving equivalent protection. Transfers to the USA are protected by the safeguards in each company’s data processing terms, such as the EU Standard Contractual Clauses. <strong>None of them may use your data for their own purposes</strong>, and we never sell or share it with anyone else.</p>
+      <p>Transfers to the USA are protected by the safeguards in each company’s data processing terms, such as the EU Standard Contractual Clauses. <strong>Formspree and Google may not use your messages for their own purposes</strong>, and we never sell or share them with anyone else.</p>
 
       <h2>Your rights</h2>
       <p>Wherever you live, you can <strong>see</strong> your data, <strong>export</strong> it (Settings → Export), <strong>correct</strong> it, <strong>delete</strong> it, <strong>restrict</strong> or <strong>object to</strong> how it is used, and <strong>complain</strong> to a data protection authority (in the UK, the ICO; in the EU, the authority in your country).</p>
-      <p>You can do most of this yourself in the app. For anything else, email <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>. We reply within one month. Because we do not know your name or email address, we may ask for details that help us find your account. We do not sell or “share” personal information as California law defines it.</p>
+      <p>Your tank data is on your device and in your own iCloud, so you control it directly in the app. The only personal data we hold is feedback you have sent us. To see or delete it, email <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>. We reply within one month. We do not sell or “share” personal information as California law defines it.</p>
 
       <h2>Security</h2>
-      <p>Data is encrypted in transit (HTTPS) and stored encrypted by Supabase. Each account can reach only its own data and photos. Sign in with Apple means we never handle a password.</p>
+      <p>Your data on your device is protected by iOS. Cloud Sync uses Apple’s iCloud security: data is encrypted in transit and on Apple’s servers, and only your Apple Account can reach it. TankLog never handles a password.</p>
 
       <h2>Children</h2>
-      <p>TankLog is for a general audience. Without Cloud Sync, it collects nothing from anyone, including children. Cloud Sync is not intended for children under 13 (or under 16 in the EU and UK) without a parent’s permission. If you believe a child has given us data, email us and we will delete it.</p>
+      <p>TankLog is for a general audience and collects nothing from anyone, including children, apart from feedback someone chooses to send. If you believe a child has sent us personal information, email us and we will delete it.</p>
 
       <h2>Changes to this policy</h2>
       <p>If this policy changes, we will update this page. If a change affects how your data is used, we will tell you in the app first.</p>
@@ -128,26 +123,27 @@
       <h2>Contact</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Cloud Sync Terms</a></p>
+      <p>TankLog is licensed under <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s standard license agreement (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
     <!-- DEUTSCH -->
     <div class="lang-section" id="lang-de">
       <p class="sub">Datenschutzerklärung · Zuletzt aktualisiert im Oktober 2026</p>
-      <span class="badge">Standardmäßig kostenlos und lokal · Die Cloud-Synchronisierung ist optional</span>
+      <span class="badge">Standardmäßig kostenlos und lokal · Die Cloud-Synchronisierung nutzt Ihre eigene iCloud</span>
       <p>TankLog: Aquascape („TankLog“) wird von <strong>Chris Dominguez</strong> betrieben, der für Ihre Daten verantwortlich ist (der „Verantwortliche“ im Sinne des Datenschutzrechts). Fragen oder Anfragen: <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>Die Kurzfassung</h2>
       <ul>
-      <li>TankLog ist kostenlos und funktioniert ohne Konto. <strong>Ohne Cloud-Synchronisierung verlassen Ihre Daten niemals Ihr Gerät.</strong></li>
-      <li><strong>Die Cloud-Synchronisierung</strong> ist optional und wird einmalig bezahlt. Wenn Sie sich dafür entscheiden, speichern wir eine Kopie Ihrer Aquarien <strong>ausschließlich zu Sicherungszwecken und zur Synchronisierung Ihrer Geräte</strong>.</li>
+      <li>TankLog ist kostenlos und funktioniert ohne Konto. <strong>Ihre Aquarien werden auf Ihrem Gerät gespeichert.</strong></li>
+      <li><strong>Die Cloud-Synchronisierung</strong> ist optional und wird einmalig bezahlt. Sie speichert eine Kopie Ihrer Aquarien in <strong>Ihrer eigenen iCloud</strong>, damit sie gesichert und auf Ihren Geräten auf dem gleichen Stand sind. <strong>TankLog hat keinen Zugriff darauf.</strong></li>
+      <li>Das Einzige, was wir jemals erhalten, ist <strong>Feedback, das Sie uns freiwillig senden</strong>.</li>
       <li>Wir <strong>verkaufen Ihre Daten niemals, geben sie nicht weiter und nutzen sie nicht für Marketingzwecke</strong>. Keine Werbung, kein Tracking, keine Analysen.</li>
       <li>Sie können Ihre Daten jederzeit <strong>exportieren oder löschen</strong>.</li>
       </ul>
 
-      <h2>Nutzung von TankLog ohne Cloud-Synchronisierung</h2>
-      <p>Alles, was Sie eingeben (Aquarien, Testergebnisse, Protokolle, Notizen, Zeitpläne, Tiere, Pflanzen, Ausrüstung, Fotos und Einstellungen), wird <strong>ausschließlich auf Ihrem Gerät</strong> gespeichert. Wir haben keinen Zugriff darauf.</p>
+      <h2>Ihre Daten auf Ihrem Gerät</h2>
+      <p>Alles, was Sie eingeben (Aquarien, Testergebnisse, Protokolle, Notizen, Zeitpläne, Tiere, Pflanzen, Ausrüstung, Fotos und Einstellungen), wird <strong>auf Ihrem Gerät</strong> gespeichert. Wir haben keinen Zugriff darauf.</p>
       <ul>
       <li><strong>Erinnerungen</strong> werden von iOS auf Ihrem Gerät geplant. Es ist kein Server beteiligt.</li>
       <li><strong>Fotos</strong> werden nur hinzugefügt, wenn Sie diese aus Ihrer Kamera oder Fotobibliothek auswählen, und sie verbleiben in der App.</li>
@@ -158,33 +154,29 @@
       </ul>
 
       <h2>Cloud-Synchronisierung (optional)</h2>
-      <p><strong>Was wir speichern:</strong></p>
       <ul>
-      <li>Ihre Aquarien und deren gesamten Inhalt, einschließlich Fotos.</li>
-      <li>Ihre App-Einstellungen: Sprache, Einheiten, Design und Zeitformat.</li>
-      <li>Eine Konto-ID aus der Anmeldung mit Apple. Wir fragen bei Apple <strong>weder</strong> nach <strong>Ihrem Namen noch </strong>nach<strong> Ihrer E-Mail-Adresse</strong>, daher liegen uns diese Daten nicht vor.</li>
-      <li>Technische Details, die erforderlich sind, um Sie sicher angemeldet zu halten, wie beispielsweise die IP-Adresse und der Gerätetyp Ihrer Anmeldesitzung. Diese werden zusammen mit Ihrem Konto gelöscht.</li>
+      <li><strong>Was synchronisiert wird:</strong> Ihre Aquarien mit allem, was dazugehört, einschließlich Fotos, sowie Ihre App-Einstellungen (Sprache, Einheiten, Design und Zeitformat).</li>
+      <li><strong>Wo:</strong> in einem privaten Bereich <strong>Ihrer eigenen iCloud</strong>, unter Ihrem Apple Account, über Apples CloudKit. Die Daten belegen Speicherplatz in Ihrer iCloud. <strong>Wir haben keine Server für Ihre Aquariendaten und keinen Zugriff auf Ihre iCloud.</strong> Apple speichert die Daten gemäß der <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>, verschlüsselt bei der Übertragung und auf den Servern von Apple.</li>
+      <li><strong>Welches iCloud-Konto:</strong> Damit Daten aus zwei iCloud-Konten niemals vermischt werden, speichert TankLog eine anonyme ID, die iCloud nur für TankLog bereitstellt. Sie bleibt auf Ihrem Gerät, und wir erhalten sie nie.</li>
+      <li><strong>Warum:</strong> ausschließlich, um Ihre Aquarien zu sichern und auf Ihren Geräten auf dem gleichen Stand zu halten.</li>
       </ul>
-      <p><strong>Warum:</strong> ausschließlich zur Sicherung Ihrer Daten und zur Gewährleistung der Datenkonsistenz auf Ihren Geräten. Rechtsgrundlage: Erbringung der von Ihnen erworbenen Dienstleistung (DSGVO Art. 6 Abs. 1 Buchstabe b).</p>
-      <p><strong>Wo:</strong> bei Supabase, auf Servern in <strong>London, Vereinigtes Königreich</strong>. Die Serverprotokolle von Supabase, die IP-Adressen enthalten, werden bis zu 7 Tage lang aufbewahrt.</p>
-      <p><strong>Wer hat Zugriff:</strong> Zugriffsregeln stellen sicher, dass nur Ihr angemeldetes Konto Ihre Daten und Fotos einsehen kann. Als Betreiber hat Chris technisch Zugriff auf die Datenbank. Er sieht Ihre Daten <strong>nur</strong> ein, <strong>wenn Sie um Hilfe bitten und Ihre Einwilligung erteilen</strong> oder wenn dies gesetzlich vorgeschrieben ist.</p>
       <p><strong>Wie lange:</strong> bis Sie die Daten löschen.</p>
       <ul>
-      <li><strong>Durch das Löschen eines Aquariums</strong> werden dessen Inhalte und Fotos aus der Cloud entfernt. Ein kleiner Marker (eine ID und der Zeitpunkt der Löschung, ohne Inhalt) bleibt bestehen, damit Ihre anderen Geräte wissen, dass sie diese Daten ebenfalls löschen müssen.</li>
-      <li>Über <strong>Einstellungen → Cloud-Synchronisierung → Konto und Daten löschen</strong> werden Ihr Konto, alle synchronisierten Aquarien, Ihre Einstellungen und Ihre Fotos sofort gelöscht. Kopien in den täglichen Backups von Supabase werden <strong>innerhalb von 7 Tagen</strong> entfernt.</li>
-      <li><strong>Durch das Abmelden</strong> wird die Cloud-Synchronisierung unterbrochen. Ihre Cloud-Daten bleiben erhalten, bis Sie sie löschen.</li>
+      <li><strong>Durch das Löschen eines Aquariums</strong> werden dessen Inhalte und Fotos aus Ihrer iCloud entfernt. Ein kleiner Marker (eine ID und der Zeitpunkt der Löschung, ohne Inhalt) bleibt bestehen, damit Ihre anderen Geräte wissen, dass sie das Aquarium ebenfalls löschen müssen.</li>
+      <li>Über <strong>Einstellungen → Cloud-Synchronisierung → TankLog-Daten aus iCloud löschen</strong> wird alles entfernt, was TankLog in Ihrer iCloud gespeichert hat, auf allen Ihren Geräten. Die Aquarien auf Ihrem Gerät bleiben erhalten.</li>
+      <li><strong>Durch das Ausschalten der Synchronisierung</strong> wird sie pausiert. Ihre iCloud-Kopie bleibt erhalten, bis Sie sie löschen.</li>
       </ul>
 
       <h2>Cloud-Synchronisierung erwerben</h2>
       <ul>
       <li><strong>Apple</strong> wickelt die Zahlung ab. Wir erhalten niemals Einblick in Ihre Kartendaten oder Ihren Apple Account.</li>
-      <li><strong>RevenueCat</strong> (USA) bestätigt Ihren Kauf, damit die Cloud-Synchronisierung auf Ihren Geräten freigeschaltet wird. Das Unternehmen erhält die Kaufdetails, eine auf Ihrem Gerät erstellte anonyme ID sowie grundlegende technische Informationen (App-Version, Gerätetyp, Land). TankLog kontaktiert RevenueCat <strong>nur</strong>, wenn Sie die Cloud-Synchronisierung kaufen oder wiederherstellen oder auf einem Gerät, auf dem sie bereits erworben wurde. Bei kostenlosen Nutzern stellt die App nie eine Verbindung zu RevenueCat her.</li>
-      <li>Rechtsgrundlage: Erbringung der von Ihnen erworbenen Dienstleistung (DSGVO Art. 6 Abs. 1 Buchstabe b). RevenueCat speichert Kaufdaten gemäß seiner eigenen Richtlinie; wenden Sie sich an uns, und wir lassen diese löschen.</li>
+      <li>TankLog fragt <strong>auf Ihrem Gerät</strong> bei Apple ab, ob Sie die Cloud-Synchronisierung gekauft haben, um sie freizuschalten. Wir erhalten dabei keine personenbezogenen Daten; Apple stellt Entwicklern nur zusammengefasste Verkaufsberichte bereit.</li>
+      <li>Für eine <strong>Rückerstattung</strong> nutzen Sie die Seite <a href="https://reportaproblem.apple.com">„Problem melden“</a> von Apple.</li>
       </ul>
 
       <h2>Senden von Feedback</h2>
       <ul>
-      <li>Über <strong>Feedback senden</strong> werden der Nachrichtentyp, der Betreff, Ihre Nachricht und die App-Version übermittelt. Ihr Name oder Ihre E-Mail-Adresse werden nicht gesendet, es sei denn, Sie geben diese selbst ein. Das Formular wird über <strong>Formspree</strong> (USA) abgewickelt, das möglicherweise technische Details wie Ihre IP-Adresse protokolliert, um Spam zu blockieren; die Nachricht wird an unseren Support-Posteingang bei <strong>Gmail</strong> (Google) weitergeleitet.</li>
+      <li>Über <strong>Feedback senden</strong> werden der Nachrichtentyp, der Betreff, Ihre Nachricht, die App-Version und, falls Sie sie angeben, Ihre E-Mail-Adresse übermittelt, die wir nur verwenden, um Ihnen zu antworten. Ihr Name wird nicht gesendet, es sei denn, Sie geben ihn selbst ein. Das Formular wird über <strong>Formspree</strong> (USA) abgewickelt, das möglicherweise technische Details wie Ihre IP-Adresse protokolliert, um Spam zu blockieren; die Nachricht wird an unseren Support-Posteingang bei <strong>Gmail</strong> (Google) weitergeleitet.</li>
       <li>Wenn Sie <strong>uns eine E-Mail senden</strong>, sehen wir Ihre E-Mail-Adresse und Ihre Nachricht.</li>
       <li>Wir bewahren Nachrichten nur so lange auf, wie wir sie benötigen, um Ihnen zu helfen und die App zu verbessern. Rechtsgrundlage: unser berechtigtes Interesse daran, Ihnen zu antworten und TankLog zu verbessern (DSGVO Art. 6 Abs. 1 Buchstabe f).</li>
       </ul>
@@ -192,23 +184,21 @@
       <h2>Wer verarbeitet Ihre Daten</h2>
       <table>
       <tr><th>Dienst</th><th>Wozu</th><th>Wo</th></tr>
-      <tr><td>Supabase</td><td>Speicher für die Cloud-Synchronisierung und Anmeldung</td><td>Vereinigtes Königreich</td></tr>
-      <tr><td>Apple</td><td>Mit Apple anmelden und Zahlungen</td><td>Weltweit</td></tr>
-      <tr><td>RevenueCat</td><td>Bestätigt Käufe der Cloud-Synchronisierung</td><td>USA</td></tr>
+      <tr><td>Apple</td><td>iCloud (Speicher für die Cloud-Synchronisierung) und Zahlungen</td><td>Weltweit</td></tr>
       <tr><td>Formspree</td><td>Übermittelt Feedback aus der App</td><td>USA</td></tr>
       <tr><td>Google (Gmail)</td><td>Support-Posteingang</td><td>USA</td></tr>
       </table>
-      <p>Die EU erkennt das Vereinigte Königreich als Land mit gleichwertigem Schutzniveau an. Datenübermittlungen in die USA sind durch die Schutzmaßnahmen in den Datenverarbeitungsbedingungen der jeweiligen Unternehmen geschützt, wie beispielsweise die EU-Standardvertragsklauseln. <strong>Keines dieser Unternehmen darf Ihre Daten für eigene Zwecke verwenden</strong>, und wir verkaufen oder geben Ihre Daten niemals an Dritte weiter.</p>
+      <p>Übermittlungen in die USA sind durch die Schutzmaßnahmen in den Datenverarbeitungsbedingungen des jeweiligen Unternehmens geschützt, wie beispielsweise die EU-Standardvertragsklauseln. <strong>Formspree und Google dürfen Ihre Nachrichten nicht für eigene Zwecke verwenden</strong>, und wir verkaufen oder geben sie niemals an Dritte weiter.</p>
 
       <h2>Ihre Rechte</h2>
       <p>Unabhängig davon, wo Sie wohnen, können Sie Ihre Daten <strong>einsehen</strong>, <strong>exportieren</strong> (Einstellungen → Exportieren), <strong>berichtigen</strong>, <strong>löschen</strong>, deren Verwendung <strong>einschränken</strong> oder ihr <strong>widersprechen</strong> sowie <strong>eine Beschwerde</strong> bei einer Datenschutzbehörde <strong>einreichen</strong> (im Vereinigten Königreich bei der ICO; in der EU bei der Behörde Ihres Landes).</p>
-      <p>Das meiste davon können Sie selbst in der App erledigen. Für alle weiteren Anliegen senden <a href="mailto:tanklog.support@gmail.com">Sie bitte eine E-Mail an tanklog.support@gmail.com</a>. Wir antworten innerhalb eines Monats. Da wir Ihren Namen oder Ihre E-Mail-Adresse nicht kennen, bitten wir Sie möglicherweise um Angaben, die uns helfen, Ihr Konto zu finden. Wir „verkaufen“ oder „teilen“ keine personenbezogenen Daten im Sinne des kalifornischen Rechts.</p>
+      <p>Ihre Aquariendaten befinden sich auf Ihrem Gerät und in Ihrer eigenen iCloud, sodass Sie sie direkt in der App verwalten. Die einzigen personenbezogenen Daten, die wir speichern, sind Feedback-Nachrichten, die Sie uns gesendet haben. Um diese einzusehen oder löschen zu lassen, senden <a href="mailto:tanklog.support@gmail.com">Sie bitte eine E-Mail an tanklog.support@gmail.com</a>. Wir antworten innerhalb eines Monats. Wir „verkaufen“ oder „teilen“ keine personenbezogenen Daten im Sinne des kalifornischen Rechts.</p>
 
       <h2>Sicherheit</h2>
-      <p>Daten werden bei der Übertragung (HTTPS) verschlüsselt und von Supabase verschlüsselt gespeichert. Jedes Konto hat nur Zugriff auf seine eigenen Daten und Fotos. Dank „Mit Apple anmelden“ verarbeiten wir niemals ein Passwort.</p>
+      <p>Ihre Daten auf Ihrem Gerät werden von iOS geschützt. Die Cloud-Synchronisierung nutzt die iCloud-Sicherheit von Apple: Die Daten werden bei der Übertragung und auf den Servern von Apple verschlüsselt, und nur Ihr Apple Account hat Zugriff darauf. TankLog verarbeitet niemals ein Passwort.</p>
 
       <h2>Kinder</h2>
-      <p>TankLog richtet sich an ein allgemeines Publikum. Ohne Cloud-Synchronisierung werden keinerlei Daten von irgendjemandem erfasst, auch nicht von Kindern. Die Cloud-Synchronisierung ist nicht für Kinder unter 13 Jahren (bzw. unter 16 Jahren in der EU und im Vereinigten Königreich) ohne elterliche Zustimmung vorgesehen. Sollten Sie der Meinung sein, dass ein Kind uns Daten übermittelt hat, senden Sie uns bitte eine E-Mail, und wir werden diese löschen.</p>
+      <p>TankLog richtet sich an ein allgemeines Publikum und erfasst von niemandem Daten, auch nicht von Kindern, abgesehen von Feedback, das jemand freiwillig sendet. Sollten Sie der Meinung sein, dass uns ein Kind personenbezogene Daten gesendet hat, senden Sie uns bitte eine E-Mail, und wir werden diese löschen.</p>
 
       <h2>Änderungen an dieser Richtlinie</h2>
       <p>Sollte sich diese Datenschutzerklärung ändern, werden wir diese Seite aktualisieren. Sollte eine Änderung Auswirkungen auf die Verwendung Ihrer Daten haben, werden wir Sie zunächst in der App darüber informieren.</p>
@@ -216,26 +206,27 @@
       <h2>Kontakt</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Bedingungen der Cloud-Synchronisierung</a></p>
+      <p>Für TankLog gilt die <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard-Lizenzvereinbarung von Apple (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
     <!-- FRANÇAIS -->
     <div class="lang-section" id="lang-fr">
       <p class="sub">Politique de confidentialité · Dernière mise à jour : octobre 2026</p>
-      <span class="badge">Gratuit et local par défaut · La synchronisation dans le cloud est facultative</span>
+      <span class="badge">Gratuit et local par défaut · La synchronisation dans le cloud utilise votre propre iCloud</span>
       <p>TankLog : Aquascape (« TankLog ») est développé par <strong>Chris Dominguez</strong>, qui est responsable du traitement de vos données (le « responsable du traitement » au sens de la législation sur la protection des données). Questions ou demandes : <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>En bref</h2>
       <ul>
-      <li>TankLog est gratuit et fonctionne sans compte. <strong>Sans la synchronisation dans le cloud, vos données ne quittent jamais votre appareil.</strong></li>
-      <li><strong>La synchronisation dans le cloud</strong> est facultative et payante (paiement unique). Si vous optez pour cette option, nous conservons une copie de vos aquariums <strong>uniquement à des fins de sauvegarde et de synchronisation entre vos appareils</strong>.</li>
+      <li>TankLog est gratuit et fonctionne sans compte. <strong>Vos aquariums sont stockés sur votre appareil.</strong></li>
+      <li><strong>La synchronisation dans le cloud</strong> est facultative et payante (paiement unique). Elle conserve une copie de vos aquariums dans <strong>votre propre iCloud</strong>, pour qu’ils soient sauvegardés et identiques sur vos appareils. <strong>TankLog ne peut pas y accéder.</strong></li>
+      <li>La seule chose que nous recevons, ce sont <strong>les commentaires que vous choisissez de nous envoyer</strong>.</li>
       <li>Nous <strong>ne vendons jamais vos données, ne les partageons pas et ne les utilisons pas à des fins de marketing</strong>. Pas de publicités, pas de suivi, pas d’analyses.</li>
       <li>Vous pouvez <strong>exporter ou supprimer</strong> vos données à tout moment.</li>
       </ul>
 
-      <h2>Utilisation de TankLog sans synchronisation dans le cloud</h2>
-      <p>Tout ce que vous saisissez (aquariums, résultats de tests, journaux, notes, plannings, animaux, plantes, équipement, photos et paramètres) est stocké <strong>uniquement sur votre appareil</strong>. Nous ne pouvons pas y accéder.</p>
+      <h2>Vos données sur votre appareil</h2>
+      <p>Tout ce que vous saisissez (aquariums, résultats de tests, journaux, notes, plannings, animaux, plantes, équipement, photos et paramètres) est stocké <strong>sur votre appareil</strong>. Nous ne pouvons pas y accéder.</p>
       <ul>
       <li><strong>Les rappels</strong> sont programmés par iOS sur votre appareil. Aucun serveur n’intervient.</li>
       <li><strong>Les photos</strong> ne sont ajoutées que lorsque vous les sélectionnez depuis votre appareil photo ou votre photothèque, et elles restent dans l’application.</li>
@@ -246,33 +237,29 @@
       </ul>
 
       <h2>Synchronisation dans le cloud (facultative)</h2>
-      <p><strong>Ce que nous stockons :</strong></p>
       <ul>
-      <li>Vos aquariums et tout ce qu’ils contiennent, y compris les photos.</li>
-      <li>Vos paramètres d’application : langue, unités de mesure, thème et format de l’heure.</li>
-      <li>Un identifiant de compte issu de la fonction « Se connecter avec Apple ». Nous <strong>ne</strong> demandons <strong>ni nom ni adresse e-mail</strong> à Apple ; nous ne disposons donc pas de ces informations.</li>
-      <li>Les informations techniques nécessaires pour maintenir votre connexion en toute sécurité, telles que l’adresse IP et le type d’appareil utilisé lors de votre session de connexion. Ces données sont supprimées en même temps que votre compte.</li>
+      <li><strong>Ce qui est synchronisé :</strong> vos aquariums et tout leur contenu, y compris les photos, ainsi que les paramètres de l’application (langue, unités, thème et format de l’heure).</li>
+      <li><strong>Où :</strong> dans un espace privé de <strong>votre propre iCloud</strong>, associé à votre compte Apple, grâce à CloudKit d’Apple. Ces données sont décomptées de votre stockage iCloud. <strong>Nous n’avons aucun serveur pour les données de vos aquariums et ne pouvons pas accéder à votre iCloud.</strong> Apple les conserve conformément à la <a href="https://www.apple.com/legal/privacy/">Politique de confidentialité d’Apple</a>, chiffrées pendant leur transfert et sur les serveurs d’Apple.</li>
+      <li><strong>Quel compte iCloud :</strong> pour ne jamais mélanger les données de deux comptes iCloud, TankLog conserve un identifiant anonyme qu’iCloud fournit uniquement pour TankLog. Il reste sur votre appareil et nous ne le recevons jamais.</li>
+      <li><strong>Pourquoi :</strong> uniquement pour sauvegarder vos aquariums et les garder identiques sur vos appareils.</li>
       </ul>
-      <p><strong>Pourquoi :</strong> uniquement pour sauvegarder vos données et les synchroniser sur tous vos appareils. Base juridique : fourniture du service que vous avez acheté (RGPD, art. 6, paragraphe 1, point b)).</p>
-      <p><strong>Où :</strong> chez Supabase, sur des serveurs situés à <strong>Londres, au Royaume-Uni</strong>. Les journaux de serveur de Supabase, qui comprennent les adresses IP, sont conservés pendant 7 jours maximum.</p>
-      <p><strong>Qui peut y accéder :</strong> les règles d’accès garantissent que seul votre compte connecté peut consulter vos données et vos photos. En tant qu’opérateur, Chris peut techniquement accéder à la base de données. Il <strong>ne</strong> consulte vos données <strong>que si vous demandez de l’aide et donnez votre autorisation</strong>, ou si la loi l’exige.</p>
       <p><strong>Durée de conservation :</strong> jusqu’à ce que vous les supprimiez.</p>
       <ul>
-      <li><strong>La suppression d’un aquarium</strong> entraîne la suppression de son contenu et de ses photos du cloud. Un petit marqueur (un identifiant et l’heure de suppression, sans contenu) est conservé afin que vos autres appareils sachent qu’ils doivent également les supprimer.</li>
-      <li>L’option <strong>Paramètres → Synchronisation dans le cloud → Supprimer le compte et les données</strong> supprime immédiatement votre compte, tous les aquariums synchronisés, vos paramètres et vos photos. Les copies figurant dans les sauvegardes quotidiennes de Supabase sont supprimées <strong>dans un délai de 7 jours</strong>.</li>
-      <li><strong>La déconnexion</strong> suspend la synchronisation dans le cloud. Vos données dans le cloud restent en place jusqu’à ce que vous les supprimiez.</li>
+      <li><strong>La suppression d’un aquarium</strong> entraîne la suppression de son contenu et de ses photos de votre iCloud. Un petit marqueur (un identifiant et l’heure de suppression, sans contenu) est conservé afin que vos autres appareils sachent qu’ils doivent le supprimer eux aussi.</li>
+      <li>L’option <strong>Paramètres → Synchronisation dans le cloud → Supprimer les données TankLog d’iCloud</strong> supprime tout ce que TankLog a stocké dans votre iCloud, sur tous vos appareils. Les aquariums présents sur votre appareil sont conservés.</li>
+      <li><strong>La désactivation de la synchronisation</strong> la met en pause. Votre copie iCloud est conservée jusqu’à ce que vous la supprimiez.</li>
       </ul>
 
       <h2>Acheter la synchronisation dans le cloud</h2>
       <ul>
       <li><strong>Apple</strong> traite le paiement. Nous n’avons jamais accès aux détails de votre carte bancaire ni à votre compte Apple.</li>
-      <li><strong>RevenueCat</strong> (États-Unis) confirme votre achat afin que la synchronisation dans le cloud soit activée sur vos appareils. Cette société reçoit les détails de l’achat, un identifiant anonyme créé sur votre appareil, ainsi que des informations techniques de base (version de l’application, type d’appareil, pays). TankLog <strong>ne</strong> contacte RevenueCat <strong>que</strong> lorsque vous achetez ou réactivez la synchronisation dans le cloud, ou sur un appareil sur lequel celle-ci a été achetée. Pour les utilisateurs de la version gratuite, l’application ne la contacte jamais.</li>
-      <li>Base juridique : fourniture du service que vous avez acheté (RGPD, art. 6, paragraphe 1, point b)). RevenueCat conserve les enregistrements d’achat conformément à sa propre politique ; demandez-nous de les faire supprimer et nous nous en chargerons.</li>
+      <li>TankLog demande à Apple, <strong>sur votre appareil</strong>, si vous avez acheté la synchronisation dans le cloud, afin de pouvoir l’activer. Nous ne recevons aucune information personnelle à cette occasion ; Apple ne fournit aux développeurs que des rapports de ventes agrégés.</li>
+      <li>Pour un <strong>remboursement</strong>, utilisez la page <a href="https://reportaproblem.apple.com">Signaler un problème</a> d’Apple.</li>
       </ul>
 
       <h2>Envoi de commentaires</h2>
       <ul>
-      <li>La fonction <strong>Envoyer des commentaires</strong> transmet le type de message, l’objet, votre message et la version de l’application. Elle n’envoie ni votre nom ni votre adresse e-mail, sauf si vous les saisissez. Le formulaire s’exécute via <strong>Formspree</strong> (États-Unis), qui peut enregistrer des détails techniques tels que votre adresse IP afin de bloquer les spams, et il est transmis à notre boîte de réception d’assistance sur <strong>Gmail</strong> (Google).</li>
+      <li>La fonction <strong>Envoyer des commentaires</strong> transmet le type de message, l’objet, votre message, la version de l’application et, si vous choisissez de l’ajouter, votre adresse e-mail, que nous utilisons uniquement pour vous répondre. Elle n’envoie pas votre nom, sauf si vous le saisissez. Le formulaire s’exécute via <strong>Formspree</strong> (États-Unis), qui peut enregistrer des détails techniques tels que votre adresse IP afin de bloquer les spams, et il est transmis à notre boîte de réception d’assistance sur <strong>Gmail</strong> (Google).</li>
       <li>Si vous <strong>nous envoyez un e-mail</strong>, nous voyons votre adresse e-mail et votre message.</li>
       <li>Nous ne conservons les messages que le temps nécessaire pour vous aider et améliorer l’application. Base juridique : notre intérêt légitime à vous répondre et à améliorer TankLog (RGPD, art. 6, paragraphe 1, point f)).</li>
       </ul>
@@ -280,23 +267,21 @@
       <h2>Qui traite vos données</h2>
       <table>
       <tr><th>Service</th><th>À quelles fins</th><th>Où</th></tr>
-      <tr><td>Supabase</td><td>Stockage de la synchronisation dans le cloud et connexion</td><td>Royaume-Uni</td></tr>
-      <tr><td>Apple</td><td>Se connecter avec Apple et paiements</td><td>Dans le monde entier</td></tr>
-      <tr><td>RevenueCat</td><td>Confirme les achats de la synchronisation dans le cloud</td><td>États-Unis</td></tr>
+      <tr><td>Apple</td><td>iCloud (stockage de la synchronisation dans le cloud) et paiements</td><td>Dans le monde entier</td></tr>
       <tr><td>Formspree</td><td>Transmet les commentaires envoyés depuis l’application</td><td>États-Unis</td></tr>
       <tr><td>Google (Gmail)</td><td>Boîte de réception de l&#x27;assistance</td><td>États-Unis</td></tr>
       </table>
-      <p>L’UE reconnaît que le Royaume-Uni offre un niveau de protection équivalent. Les transferts vers les États-Unis sont protégés par les garanties prévues dans les conditions de traitement des données de chaque entreprise, telles que les clauses contractuelles types de l’UE. <strong>Aucune de ces entreprises n’est autorisée à utiliser vos données à ses propres fins</strong>, et nous ne les vendons ni ne les partageons jamais avec qui que ce soit d’autre.</p>
+      <p>Les transferts vers les États-Unis sont protégés par les garanties prévues dans les conditions de traitement des données de chaque entreprise, telles que les clauses contractuelles types de l’UE. <strong>Formspree et Google ne sont pas autorisés à utiliser vos messages à leurs propres fins</strong>, et nous ne les vendons ni ne les partageons jamais avec qui que ce soit d’autre.</p>
 
       <h2>Vos droits</h2>
       <p>Quel que soit votre lieu de résidence, vous pouvez <strong>consulter</strong> vos données, les <strong>exporter</strong> (Paramètres → Exporter), les <strong>corriger</strong>, les <strong>supprimer</strong>, <strong>limiter</strong> leur utilisation ou <strong>vous y opposer</strong>, et <strong>déposer une réclamation</strong> auprès d’une autorité de protection des données (au Royaume-Uni, l’ICO ; dans l’UE, l’autorité de votre pays).</p>
-      <p>Vous pouvez effectuer la plupart de ces opérations vous-même dans l’application. Pour toute autre demande, envoyez <a href="mailto:tanklog.support@gmail.com">un e-mail à tanklog.support@gmail.com</a>. Nous vous répondrons dans un délai d’un mois. Comme nous ne connaissons ni votre nom ni votre adresse e-mail, nous pourrions vous demander des informations supplémentaires afin de nous aider à identifier votre compte. Nous ne vendons ni ne « partageons » d’informations personnelles au sens de la loi californienne.</p>
+      <p>Les données de vos aquariums se trouvent sur votre appareil et dans votre propre iCloud : vous les gérez donc directement dans l’application. Les seules données personnelles que nous détenons sont les commentaires que vous nous avez envoyés. Pour les consulter ou les faire supprimer, envoyez <a href="mailto:tanklog.support@gmail.com">un e-mail à tanklog.support@gmail.com</a>. Nous vous répondrons dans un délai d’un mois. Nous ne vendons ni ne « partageons » d’informations personnelles au sens de la loi californienne.</p>
 
       <h2>Sécurité</h2>
-      <p>Les données sont chiffrées lors de leur transfert (HTTPS) et stockées sous forme chiffrée par Supabase. Chaque compte n’a accès qu’à ses propres données et photos. Grâce à « Se connecter avec Apple », nous ne traitons jamais de mot de passe.</p>
+      <p>Vos données sur votre appareil sont protégées par iOS. La synchronisation dans le cloud s’appuie sur la sécurité d’iCloud : les données sont chiffrées pendant leur transfert et sur les serveurs d’Apple, et seul votre compte Apple peut y accéder. TankLog ne traite jamais de mot de passe.</p>
 
       <h2>Enfants</h2>
-      <p>TankLog s’adresse à un public général. Sans la synchronisation dans le cloud, l’application ne collecte aucune donnée, y compris auprès des enfants. La synchronisation dans le cloud n’est pas destinée aux enfants de moins de 13 ans (ou de moins de 16 ans dans l’UE et au Royaume-Uni) sans l’autorisation d’un parent. Si vous pensez qu’un enfant nous a fourni des données, envoyez-nous un e-mail et nous les supprimerons.</p>
+      <p>TankLog s’adresse à un public général et ne collecte rien auprès de personne, y compris des enfants, à l’exception des commentaires qu’une personne choisit d’envoyer. Si vous pensez qu’un enfant nous a envoyé des informations personnelles, envoyez-nous un e-mail et nous les supprimerons.</p>
 
       <h2>Modifications apportées à la présente politique</h2>
       <p>Si la présente politique venait à être modifiée, nous mettrons cette page à jour. Si une modification affecte la manière dont vos données sont utilisées, nous vous en informerons d’abord dans l’application.</p>
@@ -304,26 +289,27 @@
       <h2>Contact</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Conditions de la synchronisation dans le cloud</a></p>
+      <p>TankLog est concédé sous licence selon le <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrat de licence standard d’Apple (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
     <!-- ESPAÑOL -->
     <div class="lang-section" id="lang-es">
       <p class="sub">Política de privacidad · Última actualización: octubre de 2026</p>
-      <span class="badge">Gratis y local por defecto · La sincronización en la nube es opcional</span>
+      <span class="badge">Gratis y local por defecto · La sincronización en la nube usa tu propio iCloud</span>
       <p>TankLog: Aquascape («TankLog») es una creación de <strong>Chris Dominguez</strong>, que es el responsable de tus datos (el «responsable del tratamiento» según la ley de protección de datos). Preguntas o solicitudes: <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>La versión corta</h2>
       <ul>
-      <li>TankLog es gratis y funciona sin necesidad de crear una cuenta. <strong>Sin sincronización en la nube, tus datos nunca salen de tu dispositivo.</strong></li>
-      <li><strong>La sincronización en la nube</strong> es opcional y se paga una sola vez. Si la eliges, guardamos una copia de tus acuarios <strong>únicamente para hacer una copia de seguridad y sincronizar tus dispositivos</strong>.</li>
+      <li>TankLog es gratis y funciona sin necesidad de crear una cuenta. <strong>Tus acuarios se guardan en tu dispositivo.</strong></li>
+      <li><strong>La sincronización en la nube</strong> es opcional y se paga una sola vez. Guarda una copia de tus acuarios en <strong>tu propio iCloud</strong>, para que tengan copia de seguridad y estén iguales en tus dispositivos. <strong>TankLog no puede verla.</strong></li>
+      <li>Lo único que recibimos son <strong>los comentarios que decidas enviarnos</strong>.</li>
       <li><strong>Nunca vendemos tus datos, ni los compartimos, ni los usamos con fines de marketing</strong>. Sin anuncios, sin seguimiento, sin análisis.</li>
       <li>Puedes <strong>exportar o borrar</strong> tus datos en cualquier momento.</li>
       </ul>
 
-      <h2>Usar TankLog sin sincronización en la nube</h2>
-      <p>Todo lo que introduzcas (acuarios, resultados de análisis, registros, notas, programas, animales, plantas, equipos, fotos y ajustes) se guarda <strong>únicamente en tu dispositivo</strong>. Nosotros no podemos verlo.</p>
+      <h2>Tus datos en tu dispositivo</h2>
+      <p>Todo lo que introduzcas (acuarios, resultados de análisis, registros, notas, programas, animales, plantas, equipos, fotos y ajustes) se guarda <strong>en tu dispositivo</strong>. Nosotros no podemos verlo.</p>
       <ul>
       <li><strong>Los recordatorios</strong> los programa iOS en tu dispositivo. No interviene ningún servidor.</li>
       <li><strong>Las fotos</strong> solo se añaden cuando las eliges de tu cámara o de tu galería, y permanecen en la app.</li>
@@ -334,33 +320,29 @@
       </ul>
 
       <h2>Sincronización en la nube (opcional)</h2>
-      <p><strong>Lo que almacenamos:</strong></p>
       <ul>
-      <li>Tus acuarios y todo lo que contienen, incluidas las fotos.</li>
-      <li>La configuración de tu app: idioma, unidades, tema y formato de hora.</li>
-      <li>Un ID de cuenta de «Iniciar sesión con Apple». <strong>No</strong> le pedimos a Apple <strong>ni tu nombre ni tu dirección de correo electrónico</strong>, así que no los tenemos.</li>
-      <li>Datos técnicos necesarios para mantenerte conectado de forma segura, como la dirección IP y el tipo de dispositivo de tu sesión de inicio de sesión. Estos datos se eliminan junto con tu cuenta.</li>
+      <li><strong>Qué se sincroniza:</strong> tus acuarios y todo lo que contienen, incluidas las fotos, y los ajustes de la app (idioma, unidades, tema y formato de hora).</li>
+      <li><strong>Dónde:</strong> en un espacio privado de <strong>tu propio iCloud</strong>, en tu cuenta de Apple, mediante CloudKit de Apple. Ocupa parte de tu almacenamiento de iCloud. <strong>No tenemos servidores para los datos de tus acuarios y no podemos acceder a tu iCloud.</strong> Apple los guarda conforme a la <a href="https://www.apple.com/legal/privacy/">Política de privacidad de Apple</a>, cifrados durante la transmisión y en los servidores de Apple.</li>
+      <li><strong>Qué cuenta de iCloud:</strong> para no mezclar nunca los datos de dos cuentas de iCloud, TankLog guarda un ID anónimo que iCloud proporciona solo para TankLog. Se queda en tu dispositivo y nunca lo recibimos.</li>
+      <li><strong>Para qué:</strong> solo para hacer una copia de seguridad de tus acuarios y mantenerlos iguales en tus dispositivos.</li>
       </ul>
-      <p><strong>Por qué:</strong> solo para hacer una copia de seguridad de tus datos y mantenerlos igual en todos tus dispositivos. Base jurídica: prestarte el servicio que has comprado (art. 6, apartado 1, letra b) del RGPD).</p>
-      <p><strong>Dónde:</strong> en Supabase, en servidores de <strong>Londres, Reino Unido</strong>. Los registros de los servidores de Supabase, que incluyen direcciones IP, se conservan hasta 7 días.</p>
-      <p><strong>Quién puede verlos:</strong> las normas de acceso garantizan que solo tu cuenta conectada pueda leer tus datos y fotos. Como administrador, Chris puede acceder técnicamente a la base de datos. <strong>Solo</strong> consulta tus datos <strong>si le pides ayuda y le das permiso</strong>, o si la ley lo exige.</p>
       <p><strong>Durante cuánto tiempo:</strong> hasta que los borres.</p>
       <ul>
-      <li><strong>Al borrar un acuario,</strong> se elimina su contenido y sus fotos de la nube. Se mantiene un pequeño marcador (un ID y la hora de eliminación, sin contenido) para que tus otros dispositivos sepan que también deben borrarlo.</li>
-      <li>Con <strong>Ajustes → Sincronización en la nube → Eliminar cuenta y datos</strong> se borran inmediatamente tu cuenta, todos los acuarios sincronizados, tus ajustes y tus fotos. Las copias guardadas en las copias de seguridad diarias de Supabase desaparecen <strong>en un plazo de 7 días</strong>.</li>
-      <li><strong>Al cerrar sesión</strong>, se pausa la sincronización en la nube. Tus datos en la nube se mantienen hasta que los borres.</li>
+      <li><strong>Al borrar un acuario,</strong> se eliminan su contenido y sus fotos de tu iCloud. Se mantiene un pequeño marcador (un ID y la hora de eliminación, sin contenido) para que tus otros dispositivos sepan que también deben borrarlo.</li>
+      <li>Con <strong>Ajustes → Sincronización en la nube → Eliminar los datos de TankLog de iCloud</strong> se borra todo lo que TankLog guardó en tu iCloud, en todos tus dispositivos. Los acuarios de tu dispositivo se mantienen.</li>
+      <li><strong>Al desactivar la sincronización</strong>, se pausa. Tu copia en iCloud se mantiene hasta que la borres.</li>
       </ul>
 
       <h2>Comprar la sincronización en la nube</h2>
       <ul>
       <li><strong>Apple</strong> se encarga del pago. Nosotros nunca vemos los datos de tu tarjeta ni tu cuenta de Apple.</li>
-      <li><strong>RevenueCat</strong> (EE. UU.) confirma tu compra para que la sincronización en la nube se active en tus dispositivos. Recibe los detalles de la compra, un ID anónimo creado en tu dispositivo e información técnica básica (versión de la app, tipo de dispositivo, país). TankLog <strong>solo</strong> se pone en contacto con RevenueCat cuando compras o restableces la sincronización en la nube, o en un dispositivo en el que ya se haya comprado. Para los usuarios gratuitos, la app nunca se conecta con RevenueCat.</li>
-      <li>Base jurídica: prestarte el servicio que has comprado (RGPD, art. 6, apartado 1, letra b). RevenueCat conserva los registros de compra según su propia política; si nos lo pides, nos encargaremos de que los borren.</li>
+      <li>TankLog consulta a Apple, <strong>en tu dispositivo</strong>, si has comprado la sincronización en la nube, para poder activarla. No recibimos ningún dato personal con esto; Apple solo da a los desarrolladores informes de ventas resumidos.</li>
+      <li>Para pedir un <strong>reembolso</strong>, usa la página <a href="https://reportaproblem.apple.com">Notificar un problema</a> de Apple.</li>
       </ul>
 
       <h2>Enviar comentarios</h2>
       <ul>
-      <li>La opción <strong>Envía tus comentarios</strong> envía el tipo de mensaje, el asunto, tu mensaje y la versión de la app. No envía tu nombre ni tu dirección de correo electrónico a menos que los escribas tú mismo. El formulario se gestiona a través de <strong>Formspree</strong> (EE. UU.), que puede registrar datos técnicos como tu dirección IP para bloquear el spam, y se envía a nuestra bandeja de entrada de asistencia en <strong>Gmail</strong> (Google).</li>
+      <li>La opción <strong>Envía tus comentarios</strong> envía el tipo de mensaje, el asunto, tu mensaje, la versión de la app y, si decides añadirla, tu dirección de correo electrónico, que solo usamos para responderte. No envía tu nombre a menos que lo escribas tú mismo. El formulario se gestiona a través de <strong>Formspree</strong> (EE. UU.), que puede registrar datos técnicos como tu dirección IP para bloquear el spam, y se envía a nuestra bandeja de entrada de asistencia en <strong>Gmail</strong> (Google).</li>
       <li>Si <strong>nos envías</strong> <strong>un correo electrónico</strong>, vemos tu dirección de correo electrónico y tu mensaje.</li>
       <li>Conservamos los mensajes solo mientras los necesitemos para ayudarte y mejorar la aplicación. Base jurídica: nuestro interés legítimo en responderte y mejorar TankLog (art. 6, apartado 1, letra f) del RGPD).</li>
       </ul>
@@ -368,23 +350,21 @@
       <h2>Quién trata tus datos</h2>
       <table>
       <tr><th>Servicio</th><th>Para qué</th><th>Dónde</th></tr>
-      <tr><td>Supabase</td><td>Almacenamiento y inicio de sesión de la sincronización en la nube</td><td>Reino Unido</td></tr>
-      <tr><td>Apple</td><td>Iniciar sesión con Apple y pagos</td><td>En todo el mundo</td></tr>
-      <tr><td>RevenueCat</td><td>Confirma las compras de sincronización en la nube</td><td>EE. UU.</td></tr>
+      <tr><td>Apple</td><td>iCloud (almacenamiento de la sincronización en la nube) y pagos</td><td>En todo el mundo</td></tr>
       <tr><td>Formspree</td><td>Entrega los comentarios enviados desde la app</td><td>EE. UU.</td></tr>
       <tr><td>Google (Gmail)</td><td>Bandeja de entrada de asistencia</td><td>EE. UU.</td></tr>
       </table>
-      <p>La UE reconoce que el Reino Unido ofrece una protección equivalente. Las transferencias a EE. UU. están protegidas por las garantías recogidas en las condiciones de tratamiento de datos de cada empresa, como las cláusulas contractuales tipo de la UE. <strong>Ninguna de ellas puede usar tus datos para sus propios fines</strong>, y nosotros nunca los vendemos ni los compartimos con nadie más.</p>
+      <p>Las transferencias a EE. UU. están protegidas por las garantías recogidas en las condiciones de tratamiento de datos de cada empresa, como las cláusulas contractuales tipo de la UE. <strong>Formspree y Google no pueden usar tus mensajes para sus propios fines</strong>, y nosotros nunca los vendemos ni los compartimos con nadie más.</p>
 
       <h2>Tus derechos</h2>
       <p>Vivas donde vivas, puedes <strong>consultar</strong> tus datos, <strong>exportarlos</strong> (Ajustes → Exportar), <strong>corregirlos</strong>, <strong>borrarlos</strong>, <strong>restringir</strong> su uso u <strong>oponerte a</strong> él, y <strong>presentar una reclamación</strong> ante una autoridad de protección de datos (en el Reino Unido, la ICO; en la UE, la autoridad de tu país).</p>
-      <p>Puedes hacer la mayor parte de estas acciones tú mismo en la app. Para cualquier otra cosa, envía <a href="mailto:tanklog.support@gmail.com">un correo a tanklog.support@gmail.com</a>. Te responderemos en el plazo de un mes. Como no sabemos tu nombre ni tu dirección de correo electrónico, es posible que te pidamos algunos datos que nos ayuden a localizar tu cuenta. No vendemos ni «compartimos» información personal tal y como la define la legislación de California.</p>
+      <p>Los datos de tus acuarios están en tu dispositivo y en tu propio iCloud, así que los controlas directamente en la app. Los únicos datos personales que tenemos son los comentarios que nos hayas enviado. Para consultarlos o pedir que los borremos, envía <a href="mailto:tanklog.support@gmail.com">un correo a tanklog.support@gmail.com</a>. Te responderemos en el plazo de un mes. No vendemos ni «compartimos» información personal tal y como la define la legislación de California.</p>
 
       <h2>Seguridad</h2>
-      <p>Los datos se cifran durante la transmisión (HTTPS) y Supabase los almacena cifrados. Cada cuenta solo puede acceder a sus propios datos y fotos. Gracias a «Iniciar sesión con Apple», nunca manejamos contraseñas.</p>
+      <p>Los datos de tu dispositivo están protegidos por iOS. La sincronización en la nube usa la seguridad de iCloud de Apple: los datos se cifran durante la transmisión y en los servidores de Apple, y solo tu cuenta de Apple puede acceder a ellos. TankLog nunca maneja contraseñas.</p>
 
       <h2>Niños</h2>
-      <p>TankLog está dirigido a un público general. Sin la sincronización en la nube, no recopila nada de nadie, ni siquiera de los menores. La sincronización en la nube no está pensada para menores de 13 años (o de 16 en la UE y el Reino Unido) sin el permiso de los padres. Si crees que un menor nos ha facilitado datos, envíanos un correo y los eliminaremos.</p>
+      <p>TankLog está dirigido a un público general y no recopila nada de nadie, ni siquiera de los menores, salvo los comentarios que alguien decida enviar. Si crees que un menor nos ha enviado información personal, envíanos un correo y la eliminaremos.</p>
 
       <h2>Cambios en esta política</h2>
       <p>Si esta política cambia, actualizaremos esta página. Si un cambio afecta a cómo se usan tus datos, te lo diremos primero en la app.</p>
@@ -392,26 +372,27 @@
       <h2>Contacto</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Condiciones de la sincronización en la nube</a></p>
+      <p>TankLog se ofrece bajo el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrato de licencia estándar de Apple (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
     <!-- ITALIANO -->
     <div class="lang-section" id="lang-it">
       <p class="sub">Informativa sulla privacy · Ultimo aggiornamento: ottobre 2026</p>
-      <span class="badge">Gratuito e locale di default · La sincronizzazione su cloud è facoltativa</span>
+      <span class="badge">Gratuito e locale per impostazione predefinita · La Sincronizzazione su cloud usa il tuo iCloud</span>
       <p>TankLog: Aquascape (“TankLog”) è sviluppata da <strong>Chris Dominguez</strong>, responsabile dei tuoi dati (il “titolare del trattamento” ai sensi della normativa sulla protezione dei dati). Domande o richieste: <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>In breve</h2>
       <ul>
-      <li>TankLog è gratuito e funziona senza bisogno di un account. <strong>Senza Sincronizzazione su cloud, i tuoi dati non lasciano mai il tuo dispositivo.</strong></li>
-      <li><strong>La Sincronizzazione su cloud</strong> è opzionale e si paga una sola volta. Se la scegli, conserviamo una copia dei tuoi acquari <strong>solo per farne un backup e sincronizzare i tuoi dispositivi</strong>.</li>
+      <li>TankLog è gratuito e funziona senza bisogno di un account. <strong>I tuoi acquari sono salvati sul tuo dispositivo.</strong></li>
+      <li><strong>La Sincronizzazione su cloud</strong> è opzionale e si paga una sola volta. Conserva una copia dei tuoi acquari nel <strong>tuo iCloud</strong>, così ne hai un backup e sono uguali su tutti i tuoi dispositivi. <strong>TankLog non può vederla.</strong></li>
+      <li>L’unica cosa che riceviamo sono <strong>i feedback che scegli di inviarci</strong>.</li>
       <li><strong>Non vendiamo</strong> <strong>mai i tuoi dati, non li condividiamo e non li usiamo per fini di marketing</strong>. Niente pubblicità, niente tracciamento, niente analisi.</li>
       <li>Puoi <strong>esportare o cancellare</strong> i tuoi dati in qualsiasi momento.</li>
       </ul>
 
-      <h2>Usare TankLog senza Sincronizzazione su cloud</h2>
-      <p>Tutto ciò che inserisci (acquari, risultati dei test, registri, note, programmi, animali, piante, attrezzature, foto e impostazioni) viene salvato <strong>solo sul tuo dispositivo</strong>. Noi non possiamo vederlo.</p>
+      <h2>I tuoi dati sul tuo dispositivo</h2>
+      <p>Tutto ciò che inserisci (acquari, risultati dei test, registri, note, programmi, animali, piante, attrezzature, foto e impostazioni) viene salvato <strong>sul tuo dispositivo</strong>. Noi non possiamo vederlo.</p>
       <ul>
       <li><strong>I promemoria</strong> vengono programmati da iOS sul tuo dispositivo. Non è coinvolto alcun server.</li>
       <li><strong>Le foto</strong> vengono aggiunte solo quando le selezioni dalla fotocamera o dalla libreria foto e rimangono all’interno dell’app.</li>
@@ -422,33 +403,29 @@
       </ul>
 
       <h2>Sincronizzazione su cloud (opzionale)</h2>
-      <p><strong>Cosa salviamo:</strong></p>
       <ul>
-      <li>I tuoi acquari e tutto ciò che contengono, comprese le foto.</li>
-      <li>Le impostazioni dell’app: lingua, unità di misura, tema e formato dell’ora.</li>
-      <li>Un ID account da “Accedi con Apple”. <strong>Non</strong> chiediamo ad Apple <strong>né il nome né l’indirizzo email</strong>, quindi non li abbiamo.</li>
-      <li>I dati tecnici necessari per mantenere il tuo accesso in modo sicuro, come l’indirizzo IP e il tipo di dispositivo della tua sessione di accesso. Questi vengono cancellati insieme al tuo account.</li>
+      <li><strong>Cosa viene sincronizzato:</strong> i tuoi acquari con tutto il loro contenuto, foto comprese, e le impostazioni dell’app (lingua, unità, tema e formato dell’ora).</li>
+      <li><strong>Dove:</strong> in un’area privata del <strong>tuo iCloud</strong>, nel tuo Account Apple, tramite CloudKit di Apple. Occupa parte del tuo spazio di archiviazione iCloud. <strong>Non abbiamo server per i dati dei tuoi acquari e non possiamo accedere al tuo iCloud.</strong> Apple li conserva secondo l’<a href="https://www.apple.com/legal/privacy/">Informativa sulla privacy di Apple</a>, crittografati durante il trasferimento e sui server di Apple.</li>
+      <li><strong>Quale account iCloud:</strong> per non mescolare mai i dati di due account iCloud, TankLog conserva un ID anonimo che iCloud fornisce solo per TankLog. Resta sul tuo dispositivo e noi non lo riceviamo mai.</li>
+      <li><strong>Perché:</strong> solo per fare il backup dei tuoi acquari e mantenerli uguali su tutti i tuoi dispositivi.</li>
       </ul>
-      <p><strong>Perché:</strong> solo per fare il backup dei tuoi dati e mantenerli sincronizzati sui tuoi dispositivi. Base giuridica: fornitura del servizio che hai acquistato (GDPR art. 6(1)(b)).</p>
-      <p><strong>Dove:</strong> su Supabase, su server a <strong>Londra, nel Regno Unito</strong>. I log dei server di Supabase, che includono gli indirizzi IP, vengono conservati per un massimo di 7 giorni.</p>
-      <p><strong>Chi può vederli:</strong> le regole di accesso garantiscono che solo il tuo account connesso possa leggere i tuoi dati e le tue foto. In qualità di gestore, Chris può tecnicamente accedere al database. Consulta i tuoi dati <strong>solo se chiedi aiuto e dai il permesso</strong>, oppure se la legge lo richiede.</p>
       <p><strong>Per quanto tempo:</strong> finché non li cancelli.</p>
       <ul>
-      <li><strong>Cancellando un acquario,</strong> il suo contenuto e le foto vengono rimossi dal cloud. Rimane solo un piccolo indicatore (un ID e l’ora della cancellazione, senza alcun contenuto) in modo che anche i tuoi altri dispositivi sappiano di doverlo cancellare.</li>
-      <li>La voce <strong>Impostazioni → Sincronizzazione su cloud → Elimina account e dati</strong> elimina immediatamente il tuo account, tutti gli acquari sincronizzati, le tue impostazioni e le tue foto. Le copie nei backup giornalieri di Supabase vengono eliminate <strong>entro 7 giorni</strong>.</li>
-      <li><strong>Quando esci</strong>, la sincronizzazione viene messa in pausa. I tuoi dati sul cloud rimangono finché non li elimini.</li>
+      <li><strong>Cancellando un acquario,</strong> il suo contenuto e le foto vengono rimossi dal tuo iCloud. Rimane solo un piccolo indicatore (un ID e l’ora della cancellazione, senza alcun contenuto) in modo che anche i tuoi altri dispositivi sappiano di doverlo cancellare.</li>
+      <li>La voce <strong>Impostazioni → Sincronizzazione su cloud → Elimina i dati di TankLog da iCloud</strong> elimina tutto ciò che TankLog ha salvato nel tuo iCloud, su tutti i tuoi dispositivi. Gli acquari sul tuo dispositivo restano.</li>
+      <li><strong>Disattivando la sincronizzazione</strong>, la metti in pausa. La tua copia su iCloud resta finché non la elimini.</li>
       </ul>
 
       <h2>Acquistare la sincronizzazione su cloud</h2>
       <ul>
       <li><strong>Apple</strong> gestisce il pagamento. Non vediamo mai i dati della tua carta né il tuo Account Apple.</li>
-      <li><strong>RevenueCat</strong> (USA) conferma il tuo acquisto in modo che la Sincronizzazione su cloud si sblocchi sui tuoi dispositivi. Riceve i dettagli dell’acquisto, un ID anonimo creato sul tuo dispositivo e alcune informazioni tecniche di base (versione dell’app, tipo di dispositivo, paese). TankLog contatta RevenueCat <strong>solo</strong> quando acquisti o ripristini la Sincronizzazione su cloud, oppure su un dispositivo su cui è stata acquistata. Per chi usa la versione gratuita, l’app non contatta mai RevenueCat.</li>
-      <li>Base giuridica: fornitura del servizio che hai acquistato (GDPR art. 6(1)(b)). RevenueCat conserva i dati relativi agli acquisti secondo la propria politica; chiedicelo e provvederemo a farli cancellare.</li>
+      <li>TankLog chiede ad Apple, <strong>sul tuo dispositivo</strong>, se hai acquistato la Sincronizzazione su cloud, per poterla sbloccare. Da questo non riceviamo alcun dato personale; Apple fornisce agli sviluppatori solo resoconti di vendita aggregati.</li>
+      <li>Per un <strong>rimborso</strong>, usa la pagina <a href="https://reportaproblem.apple.com">Segnala un problema</a> di Apple.</li>
       </ul>
 
       <h2>Invio di feedback</h2>
       <ul>
-      <li>La funzione <strong>Invia un feedback</strong> invia il tipo di messaggio, l’oggetto, il tuo messaggio e la versione dell’app. Non invia il tuo nome né il tuo indirizzo e-mail a meno che tu non li inserisca. Il modulo viene gestito tramite <strong>Formspree</strong> (USA), che potrebbe registrare dettagli tecnici come il tuo indirizzo IP per bloccare lo spam, e viene inoltrato alla nostra casella di posta dell’assistenza su <strong>Gmail</strong> (Google).</li>
+      <li>La funzione <strong>Invia un feedback</strong> invia il tipo di messaggio, l’oggetto, il tuo messaggio, la versione dell’app e, se scegli di aggiungerlo, il tuo indirizzo e-mail, che usiamo solo per risponderti. Non invia il tuo nome a meno che tu non lo inserisca. Il modulo viene gestito tramite <strong>Formspree</strong> (USA), che potrebbe registrare dettagli tecnici come il tuo indirizzo IP per bloccare lo spam, e viene inoltrato alla nostra casella di posta dell’assistenza su <strong>Gmail</strong> (Google).</li>
       <li>Se <strong>ci</strong> scrivi <strong>via e-mail</strong>, vediamo il tuo indirizzo e-mail e il tuo messaggio.</li>
       <li>Conserviamo i messaggi solo per il tempo necessario ad aiutarti e a migliorare l’app. Base giuridica: il nostro legittimo interesse a risponderti e a migliorare TankLog (GDPR art. 6(1)(f)).</li>
       </ul>
@@ -456,23 +433,21 @@
       <h2>Chi tratta i tuoi dati</h2>
       <table>
       <tr><th>Servizio</th><th>A cosa serve</th><th>Dove</th></tr>
-      <tr><td>Supabase</td><td>Archiviazione della Sincronizzazione su cloud e accesso</td><td>Regno Unito</td></tr>
-      <tr><td>Apple</td><td>Accedi con Apple e pagamenti</td><td>In tutto il mondo</td></tr>
-      <tr><td>RevenueCat</td><td>Conferma gli acquisti della Sincronizzazione su cloud</td><td>USA</td></tr>
+      <tr><td>Apple</td><td>iCloud (archiviazione della Sincronizzazione su cloud) e pagamenti</td><td>In tutto il mondo</td></tr>
       <tr><td>Formspree</td><td>Recapita i feedback inviati dall’app</td><td>USA</td></tr>
       <tr><td>Google (Gmail)</td><td>Posta in arrivo dell&#x27;assistenza</td><td>USA</td></tr>
       </table>
-      <p>L&#x27;UE riconosce che il Regno Unito garantisce una protezione equivalente. I trasferimenti verso gli Stati Uniti sono protetti dalle misure di sicurezza previste dai termini di trattamento dei dati di ciascuna azienda, come le clausole contrattuali tipo dell&#x27;UE. <strong>Nessuna di queste aziende può utilizzare i tuoi dati per i propri scopi</strong>, e noi non li vendiamo né li condividiamo mai con nessun altro.</p>
+      <p>I trasferimenti verso gli Stati Uniti sono protetti dalle misure di sicurezza previste dai termini di trattamento dei dati di ciascuna azienda, come le clausole contrattuali tipo dell’UE. <strong>Formspree e Google non possono utilizzare i tuoi messaggi per i propri scopi</strong>, e noi non li vendiamo né li condividiamo mai con nessun altro.</p>
 
       <h2>I tuoi diritti</h2>
       <p>Ovunque tu viva, puoi <strong>visualizzare</strong> i tuoi dati, <strong>esportarli</strong> (Impostazioni → Esporta), <strong>correggerli</strong>, <strong>cancellarli</strong>, <strong>limitarne</strong> l’utilizzo o <strong>opporti al</strong> loro trattamento, e <strong>presentare un reclamo</strong> a un’autorità garante della protezione dei dati (nel Regno Unito, l’ICO; nell’UE, l’autorità del tuo paese).</p>
-      <p>Puoi fare la maggior parte di queste operazioni da solo nell’app. Per qualsiasi altra cosa, manda <a href="mailto:tanklog.support@gmail.com">un’e-mail a tanklog.support@gmail.com</a>. Ti risponderemo entro un mese. Dato che non conosciamo il tuo nome né il tuo indirizzo e-mail, potremmo chiederti alcuni dettagli che ci aiutino a individuare il tuo account. Non vendiamo né “condividiamo” informazioni personali secondo la definizione della legge della California.</p>
+      <p>I dati dei tuoi acquari sono sul tuo dispositivo e nel tuo iCloud, quindi li gestisci direttamente nell’app. Gli unici dati personali che conserviamo sono i feedback che ci hai inviato. Per vederli o farli cancellare, manda <a href="mailto:tanklog.support@gmail.com">un’e-mail a tanklog.support@gmail.com</a>. Ti risponderemo entro un mese. Non vendiamo né “condividiamo” informazioni personali secondo la definizione della legge della California.</p>
 
       <h2>Sicurezza</h2>
-      <p>I dati vengono crittografati durante il trasferimento (HTTPS) e archiviati in forma crittografata da Supabase. Ogni account può accedere solo ai propri dati e alle proprie foto. Grazie ad “Accedi con Apple”, non gestiamo mai alcuna password.</p>
+      <p>I dati sul tuo dispositivo sono protetti da iOS. La Sincronizzazione su cloud usa la sicurezza di iCloud di Apple: i dati vengono crittografati durante il trasferimento e sui server di Apple, e solo il tuo Account Apple può accedervi. TankLog non gestisce mai alcuna password.</p>
 
       <h2>Minori</h2>
-      <p>TankLog è destinato a un pubblico generico. Senza Sincronizzazione su cloud, non raccoglie alcun dato da nessuno, bambini compresi. La Sincronizzazione su cloud non è destinata a bambini di età inferiore ai 13 anni (o ai 16 anni nell’UE e nel Regno Unito) senza il permesso dei genitori. Se ritieni che un bambino ci abbia fornito dei dati, scrivici via e-mail e provvederemo a cancellarli.</p>
+      <p>TankLog è destinato a un pubblico generico e non raccoglie nulla da nessuno, bambini compresi, a parte i feedback che qualcuno sceglie di inviare. Se ritieni che un bambino ci abbia inviato informazioni personali, scrivici via e-mail e provvederemo a cancellarle.</p>
 
       <h2>Modifiche a questa informativa</h2>
       <p>Se questa informativa dovesse cambiare, aggiorneremo questa pagina. Se una modifica influisce sul modo in cui vengono utilizzati i tuoi dati, te lo comunicheremo prima nell’app.</p>
@@ -480,26 +455,27 @@
       <h2>Contatti</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Condizioni della Sincronizzazione su cloud</a></p>
+      <p>TankLog è concesso in licenza secondo il <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contratto di licenza standard di Apple (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
     <!-- NEDERLANDS -->
     <div class="lang-section" id="lang-nl">
       <p class="sub">Privacybeleid · Laatst bijgewerkt in oktober 2026</p>
-      <span class="badge">Standaard gratis en lokaal · Cloud-synchronisatie is optioneel</span>
+      <span class="badge">Standaard gratis en lokaal · Cloud-synchronisatie gebruikt uw eigen iCloud</span>
       <p>TankLog: Aquascape (“TankLog”) is ontwikkeld door <strong>Chris Dominguez</strong>, die verantwoordelijk is voor uw gegevens (de “verwerkingsverantwoordelijke” in de zin van de wetgeving inzake gegevensbescherming). Vragen of verzoeken: <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>De korte versie</h2>
       <ul>
-      <li>TankLog is gratis en werkt zonder account. <strong>Zonder Cloud-synchronisatie verlaten uw gegevens nooit uw apparaat.</strong></li>
-      <li><strong>Cloud-synchronisatie</strong> is optioneel en u betaalt er eenmalig voor. Indien u hiervoor kiest, slaan wij een kopie van uw aquaria <strong>uitsluitend</strong> op <strong>om hiervan een back-up te maken en uw apparaten te synchroniseren</strong>.</li>
+      <li>TankLog is gratis en werkt zonder account. <strong>Uw aquaria worden op uw apparaat opgeslagen.</strong></li>
+      <li><strong>Cloud-synchronisatie</strong> is optioneel en u betaalt er eenmalig voor. Er wordt een kopie van uw aquaria bewaard in <strong>uw eigen iCloud</strong>, zodat er een back-up van is en ze op uw apparaten gelijk zijn. <strong>TankLog heeft hier geen inzage in.</strong></li>
+      <li>Het enige wat wij ooit ontvangen, is <strong>feedback die u ons zelf stuurt</strong>.</li>
       <li>Wij <strong>verkopen uw gegevens nooit, delen deze niet en gebruiken ze niet voor marketingdoeleinden</strong>. Geen advertenties, geen tracking, geen analyses.</li>
       <li>U kunt uw gegevens op elk moment <strong>exporteren of verwijderen</strong>.</li>
       </ul>
 
-      <h2>TankLog gebruiken zonder Cloud-synchronisatie</h2>
-      <p>Alles wat u invoert (aquaria, testresultaten, logboeken, notities, schema’s, dieren, planten, apparatuur, foto’s en instellingen) wordt <strong>uitsluitend op uw apparaat</strong> opgeslagen. Wij hebben hier geen inzage in.</p>
+      <h2>Uw gegevens op uw apparaat</h2>
+      <p>Alles wat u invoert (aquaria, testresultaten, logboeken, notities, schema’s, dieren, planten, apparatuur, foto’s en instellingen) wordt <strong>op uw apparaat</strong> opgeslagen. Wij hebben hier geen inzage in.</p>
       <ul>
       <li><strong>Herinneringen</strong> worden door iOS op uw apparaat ingepland. Er is geen server bij betrokken.</li>
       <li><strong>Foto’s</strong> worden alleen toegevoegd wanneer u ze selecteert vanuit uw camera of fotobibliotheek, en ze blijven in de app opgeslagen.</li>
@@ -510,33 +486,29 @@
       </ul>
 
       <h2>Cloud-synchronisatie (optioneel)</h2>
-      <p><strong>Wat wij opslaan:</strong></p>
       <ul>
-      <li>Uw aquaria en alles wat daarin staat, inclusief foto’s.</li>
-      <li>Uw app-instellingen: taal, eenheden, thema en tijdnotatie.</li>
-      <li>Een account-ID van ‘Aanmelden met Apple’. Wij vragen Apple <strong>niet</strong> om <strong>uw naam of e-mailadres</strong>, dus beschikken wij daar niet over.</li>
-      <li>Technische gegevens die nodig zijn om u veilig ingelogd te houden, zoals het IP-adres en het apparaattype van uw inlogsessie. Deze worden samen met uw account verwijderd.</li>
+      <li><strong>Wat wordt gesynchroniseerd:</strong> uw aquaria met alles wat erin staat, inclusief foto’s, en uw app-instellingen (taal, eenheden, thema en tijdnotatie).</li>
+      <li><strong>Waar:</strong> in een privégedeelte van <strong>uw eigen iCloud</strong>, onder uw Apple Account, via CloudKit van Apple. Dit telt mee voor uw iCloud-opslag. <strong>Wij hebben geen servers voor de gegevens van uw aquaria en hebben geen toegang tot uw iCloud.</strong> Apple bewaart de gegevens volgens het <a href="https://www.apple.com/legal/privacy/">privacybeleid van Apple</a>, versleuteld tijdens de overdracht en op de servers van Apple.</li>
+      <li><strong>Welk iCloud-account:</strong> om gegevens van twee iCloud-accounts nooit te vermengen, bewaart TankLog een anonieme ID die iCloud alleen voor TankLog verstrekt. Deze blijft op uw apparaat en wij ontvangen hem nooit.</li>
+      <li><strong>Waarom:</strong> uitsluitend om een back-up van uw aquaria te maken en ze op uw apparaten gelijk te houden.</li>
       </ul>
-      <p><strong>Waarom:</strong> uitsluitend om een back-up van uw gegevens te maken en deze op al uw apparaten synchroon te houden. Rechtsgrondslag: het leveren van de door u aangeschafte dienst (AVG art. 6, lid 1, onder b)).</p>
-      <p><strong>Waar:</strong> bij Supabase, op servers in <strong>Londen, Verenigd Koninkrijk</strong>. De serverlogboeken van Supabase, waarin IP-adressen zijn opgenomen, worden maximaal 7 dagen bewaard.</p>
-      <p><strong>Wie heeft er toegang:</strong> toegangsregels zorgen ervoor dat alleen uw aangemelde account uw gegevens en foto’s kan inzien. Als beheerder heeft Chris technisch gezien toegang tot de database. Hij bekijkt uw gegevens <strong>alleen als u om hulp vraagt en daarvoor toestemming geeft</strong>, of indien de wet dit vereist.</p>
       <p><strong>Hoe lang:</strong> totdat u deze verwijdert.</p>
       <ul>
-      <li><strong>Het verwijderen van een aquarium</strong> verwijdert de inhoud en foto’s ervan uit de cloud. Er blijft een kleine markering (een ID en het tijdstip van verwijdering, zonder inhoud) achter, zodat uw andere apparaten weten dat ze deze ook moeten verwijderen.</li>
-      <li>Via <strong>Instellingen → Cloud-synchronisatie → Account en gegevens verwijderen</strong> worden uw account, alle gesynchroniseerde aquaria, uw instellingen en uw foto’s onmiddellijk verwijderd. Kopieën in de dagelijkse back-ups van Supabase worden <strong>binnen 7 dagen</strong> verwijderd.</li>
-      <li><strong>Als u zich afmeldt</strong>, wordt de Cloud-synchronisatie onderbroken. Uw cloudgegevens blijven bewaard totdat u deze verwijdert.</li>
+      <li><strong>Het verwijderen van een aquarium</strong> verwijdert de inhoud en foto’s ervan uit uw iCloud. Er blijft een kleine markering (een ID en het tijdstip van verwijdering, zonder inhoud) achter, zodat uw andere apparaten weten dat ze het aquarium ook moeten verwijderen.</li>
+      <li>Via <strong>Instellingen → Cloud-synchronisatie → TankLog-gegevens uit iCloud verwijderen</strong> wordt alles verwijderd wat TankLog in uw iCloud heeft opgeslagen, op al uw apparaten. De aquaria op uw apparaat blijven bewaard.</li>
+      <li><strong>Als u de synchronisatie uitschakelt</strong>, wordt deze gepauzeerd. Uw iCloud-kopie blijft bewaard totdat u deze verwijdert.</li>
       </ul>
 
       <h2>Cloud-synchronisatie aanschaffen</h2>
       <ul>
       <li><strong>Apple</strong> verwerkt de betaling. Wij krijgen nooit inzage in uw kaartgegevens of uw Apple Account.</li>
-      <li><strong>RevenueCat</strong> (VS) bevestigt uw aankoop, zodat Cloud-synchronisatie op uw apparaten wordt ontgrendeld. Het ontvangt de aankoopgegevens, een anonieme ID die op uw apparaat is aangemaakt en technische basisinformatie (app-versie, apparaattype, land). TankLog neemt <strong>alleen</strong> contact op met RevenueCat wanneer u Cloud-synchronisatie aanschaft of herstelt, of op een apparaat waarop het is aangeschaft. Bij gratis gebruikers maakt de app nooit verbinding met RevenueCat.</li>
-      <li>Rechtsgrondslag: het leveren van de door u aangeschafte dienst (AVG art. 6, lid 1, onder b)). RevenueCat bewaart aankoopgegevens volgens zijn eigen beleid; indien u ons hierom verzoekt, zullen wij deze laten verwijderen.</li>
+      <li>TankLog vraagt <strong>op uw apparaat</strong> aan Apple of u Cloud-synchronisatie hebt gekocht, zodat de functie kan worden ontgrendeld. Wij ontvangen hierbij geen persoonsgegevens; Apple geeft ontwikkelaars alleen samengevatte verkooprapporten.</li>
+      <li>Voor een <strong>terugbetaling</strong> gebruikt u de pagina <a href="https://reportaproblem.apple.com">Meld een probleem</a> van Apple.</li>
       </ul>
 
       <h2>Feedback verzenden</h2>
       <ul>
-      <li>Via <strong>Feedback sturen</strong> worden het type bericht, het onderwerp, uw bericht en de app-versie verzonden. Uw naam of e-mailadres wordt niet verzonden, tenzij u deze zelf invoert. Het formulier wordt verwerkt via <strong>Formspree</strong> (VS), dat mogelijk technische gegevens zoals uw IP-adres registreert om spam te blokkeren, en het wordt doorgestuurd naar onze support-inbox bij <strong>Gmail</strong> (Google).</li>
+      <li>Via <strong>Feedback sturen</strong> worden het type bericht, het onderwerp, uw bericht, de app-versie en, als u dat wilt, uw e-mailadres verzonden, dat we alleen gebruiken om u te antwoorden. Uw naam wordt niet verzonden, tenzij u deze zelf invoert. Het formulier wordt verwerkt via <strong>Formspree</strong> (VS), dat mogelijk technische gegevens zoals uw IP-adres registreert om spam te blokkeren, en het wordt doorgestuurd naar onze support-inbox bij <strong>Gmail</strong> (Google).</li>
       <li>Als u <strong>ons een e-mail stuurt</strong>, zien wij uw e-mailadres en uw bericht.</li>
       <li>Wij bewaren berichten alleen zolang als nodig is om u te helpen en de app te verbeteren. Rechtsgrondslag: ons gerechtvaardigd belang om u te antwoorden en TankLog te verbeteren (AVG art. 6, lid 1, onder f)).</li>
       </ul>
@@ -544,23 +516,21 @@
       <h2>Wie verwerkt uw gegevens</h2>
       <table>
       <tr><th>Dienst</th><th>Waarvoor</th><th>Waar</th></tr>
-      <tr><td>Supabase</td><td>Opslag voor Cloud-synchronisatie en aanmelding</td><td>Verenigd Koninkrijk</td></tr>
-      <tr><td>Apple</td><td>Aanmelden met Apple en betalingen</td><td>Wereldwijd</td></tr>
-      <tr><td>RevenueCat</td><td>Bevestigt aankopen van Cloud-synchronisatie</td><td>VS</td></tr>
+      <tr><td>Apple</td><td>iCloud (opslag voor Cloud-synchronisatie) en betalingen</td><td>Wereldwijd</td></tr>
       <tr><td>Formspree</td><td>Bezorgt feedback die u in de app verstuurt</td><td>VS</td></tr>
       <tr><td>Google (Gmail)</td><td>Inbox voor ondersteuning</td><td>VS</td></tr>
       </table>
-      <p>De EU erkent dat het Verenigd Koninkrijk een gelijkwaardige bescherming biedt. Overdrachten naar de VS worden beschermd door de waarborgen in de gegevensverwerkingsvoorwaarden van elk bedrijf, zoals de standaardcontractbepalingen van de EU. <strong>Geen van hen mag uw gegevens voor eigen doeleinden gebruiken</strong>, en wij verkopen of delen deze nooit met anderen.</p>
+      <p>Overdrachten naar de VS worden beschermd door de waarborgen in de gegevensverwerkingsvoorwaarden van elk bedrijf, zoals de standaardcontractbepalingen van de EU. <strong>Formspree en Google mogen uw berichten niet voor eigen doeleinden gebruiken</strong>, en wij verkopen of delen deze nooit met anderen.</p>
 
       <h2>Uw rechten</h2>
       <p>Ongeacht waar u woont, kunt u uw gegevens <strong>inzien</strong>, <strong>exporteren</strong> (Instellingen → Exporteren), <strong>corrigeren</strong>, <strong>verwijderen</strong>, het gebruik ervan <strong>beperken</strong> of <strong>bezwaar maken tegen</strong> het gebruik ervan, en <strong>een klacht indienen</strong> bij een gegevensbeschermingsautoriteit (in het Verenigd Koninkrijk de ICO; in de EU de autoriteit in uw land).</p>
-      <p>Het meeste hiervan kunt u zelf in de app regelen. Voor al het overige kunt u <a href="mailto:tanklog.support@gmail.com">een e-mail</a> sturen naar tanklog.support@gmail.com. Wij beantwoorden uw bericht binnen een maand. Aangezien wij uw naam of e-mailadres niet kennen, kunnen wij u om gegevens vragen die ons helpen uw account te vinden. Wij verkopen of „delen“ geen persoonlijke informatie zoals gedefinieerd in de Californische wetgeving.</p>
+      <p>De gegevens van uw aquaria staan op uw apparaat en in uw eigen iCloud, dus u beheert ze rechtstreeks in de app. De enige persoonsgegevens die wij bewaren, zijn feedbackberichten die u ons hebt gestuurd. Om deze in te zien of te laten verwijderen, kunt u <a href="mailto:tanklog.support@gmail.com">een e-mail</a> sturen naar tanklog.support@gmail.com. Wij beantwoorden uw bericht binnen een maand. Wij verkopen of „delen“ geen persoonlijke informatie zoals gedefinieerd in de Californische wetgeving.</p>
 
       <h2>Beveiliging</h2>
-      <p>Gegevens worden tijdens de overdracht versleuteld (HTTPS) en door Supabase versleuteld opgeslagen. Elk account heeft uitsluitend toegang tot zijn eigen gegevens en foto’s. Dankzij ‘Aanmelden met Apple’ verwerken wij nooit een wachtwoord.</p>
+      <p>Uw gegevens op uw apparaat worden beschermd door iOS. Cloud-synchronisatie gebruikt de iCloud-beveiliging van Apple: gegevens worden versleuteld tijdens de overdracht en op de servers van Apple, en alleen uw Apple Account heeft er toegang toe. TankLog verwerkt nooit een wachtwoord.</p>
 
       <h2>Kinderen</h2>
-      <p>TankLog is bedoeld voor een algemeen publiek. Zonder Cloud-synchronisatie worden er geen gegevens verzameld van wie dan ook, ook niet van kinderen. Cloud-synchronisatie is niet bedoeld voor kinderen jonger dan 13 jaar (of jonger dan 16 jaar in de EU en het VK) zonder toestemming van een ouder. Als u denkt dat een kind ons gegevens heeft verstrekt, stuur ons dan een e-mail en wij zullen deze verwijderen.</p>
+      <p>TankLog is bedoeld voor een algemeen publiek en verzamelt van niemand gegevens, ook niet van kinderen, behalve feedback die iemand zelf stuurt. Als u denkt dat een kind ons persoonsgegevens heeft gestuurd, stuur ons dan een e-mail en wij zullen deze verwijderen.</p>
 
       <h2>Wijzigingen in dit beleid</h2>
       <p>Indien dit beleid wordt gewijzigd, zullen wij deze pagina bijwerken. Indien een wijziging gevolgen heeft voor de manier waarop uw gegevens worden gebruikt, zullen wij u dit eerst via de app meedelen.</p>
@@ -568,26 +538,27 @@
       <h2>Contact</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Voorwaarden voor Cloud-synchronisatie</a></p>
+      <p>Voor TankLog geldt de <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">standaardlicentieovereenkomst van Apple (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
     <!-- PORTUGUÊS -->
     <div class="lang-section" id="lang-pt">
       <p class="sub">Política de privacidade · Última atualização em outubro de 2026</p>
-      <span class="badge">Gratuito e local por padrão · A sincronização na nuvem é opcional</span>
+      <span class="badge">Gratuito e local por padrão · A Sincronização na nuvem usa o seu próprio iCloud</span>
       <p>O TankLog: Aquascape (“TankLog”) é desenvolvido por <strong>Chris Dominguez</strong>, que é o responsável pelos seus dados (o “controlador”, nos termos da legislação de proteção de dados). Dúvidas ou solicitações: <a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a>.</p>
 
       <h2>A versão resumida</h2>
       <ul>
-      <li>O TankLog é gratuito e funciona sem a necessidade de uma conta. <strong>Sem a Sincronização na nuvem, seus dados nunca saem do seu dispositivo.</strong></li>
-      <li><strong>A Sincronização na nuvem</strong> é opcional e paga uma única vez. Se você optar por ela, armazenamos uma cópia dos seus aquários <strong>apenas para fazer backup e sincronizar seus dispositivos</strong>.</li>
+      <li>O TankLog é gratuito e funciona sem a necessidade de uma conta. <strong>Seus aquários ficam armazenados no seu dispositivo.</strong></li>
+      <li><strong>A Sincronização na nuvem</strong> é opcional e paga uma única vez. Ela mantém uma cópia dos seus aquários no <strong>seu próprio iCloud</strong>, para que tenham backup e fiquem iguais em todos os seus dispositivos. <strong>O TankLog não tem acesso a ela.</strong></li>
+      <li>A única coisa que recebemos é o <strong>feedback que você decidir nos enviar</strong>.</li>
       <li><strong>Nunca vendemos seus dados, nem os compartilhamos ou usamos para fins de marketing</strong>. Sem anúncios, sem rastreamento, sem análises.</li>
       <li>Você pode <strong>exportar ou excluir</strong> seus dados a qualquer momento.</li>
       </ul>
 
-      <h2>Usando o TankLog sem a Sincronização na nuvem</h2>
-      <p>Tudo o que você inserir (aquários, resultados de testes, registros, notas, cronogramas, animais, plantas, equipamentos, fotos e configurações) fica armazenado <strong>apenas no seu dispositivo</strong>. Nós não temos acesso a essas informações.</p>
+      <h2>Seus dados no seu dispositivo</h2>
+      <p>Tudo o que você inserir (aquários, resultados de testes, registros, notas, cronogramas, animais, plantas, equipamentos, fotos e configurações) fica armazenado <strong>no seu dispositivo</strong>. Nós não temos acesso a essas informações.</p>
       <ul>
       <li><strong>Os lembretes</strong> são agendados pelo iOS no seu dispositivo. Nenhum servidor está envolvido.</li>
       <li><strong>As fotos</strong> são adicionadas somente quando você as seleciona da sua câmera ou da galeria de fotos, e elas permanecem no aplicativo.</li>
@@ -598,33 +569,29 @@
       </ul>
 
       <h2>Sincronização na nuvem (opcional)</h2>
-      <p><strong>O que armazenamos:</strong></p>
       <ul>
-      <li>Seus aquários e tudo o que há neles, incluindo fotos.</li>
-      <li>Suas configurações do aplicativo: idioma, unidades, tema e formato de hora.</li>
-      <li>Um ID de conta do “Faça login com a Apple”. <strong>Não</strong> solicitamos à Apple <strong>nenhum nome nem endereço de e-mail</strong>, portanto não os possuímos.</li>
-      <li>Detalhes técnicos necessários para manter você conectado com segurança, como o endereço IP e o tipo de dispositivo da sua sessão de login. Esses dados são excluídos junto com a sua conta.</li>
+      <li><strong>O que é sincronizado:</strong> seus aquários e tudo o que há neles, incluindo fotos, e as configurações do app (idioma, unidades, tema e formato de hora).</li>
+      <li><strong>Onde:</strong> em uma área privada do <strong>seu próprio iCloud</strong>, na sua Conta Apple, por meio do CloudKit da Apple. Isso ocupa parte do seu armazenamento do iCloud. <strong>Não temos servidores para os dados dos seus aquários e não podemos acessar o seu iCloud.</strong> A Apple armazena esses dados de acordo com a <a href="https://www.apple.com/legal/privacy/">Política de Privacidade da Apple</a>, criptografados em trânsito e nos servidores da Apple.</li>
+      <li><strong>Qual conta do iCloud:</strong> para nunca misturar dados de duas contas do iCloud, o TankLog guarda um ID anônimo que o iCloud fornece somente para o TankLog. Ele fica no seu dispositivo e nunca o recebemos.</li>
+      <li><strong>Por quê:</strong> apenas para fazer backup dos seus aquários e mantê-los iguais em todos os seus dispositivos.</li>
       </ul>
-      <p><strong>Por que:</strong> apenas para fazer backup dos seus dados e mantê-los sincronizados em seus dispositivos. Base legal: prestação do serviço que você adquiriu (GDPR, Art. 6(1)(b)).</p>
-      <p><strong>Onde:</strong> na Supabase, em servidores em <strong>Londres, Reino Unido</strong>. Os registros de servidor da Supabase, que incluem endereços IP, são mantidos por até 7 dias.</p>
-      <p><strong>Quem pode acessá-los:</strong> as regras de acesso garantem que apenas sua conta conectada possa ler seus dados e fotos. Como operador, Chris pode, tecnicamente, acessar o banco de dados. Ele consulta seus dados <strong>somente se você solicitar ajuda e der permissão</strong>, ou se a lei assim o exigir.</p>
       <p><strong>Por quanto tempo:</strong> até você excluí-los.</p>
       <ul>
-      <li><strong>A exclusão de um aquário</strong> remove seu conteúdo e suas fotos da nuvem. Um pequeno marcador (um ID e a hora da exclusão, sem conteúdo) permanece para que seus outros dispositivos saibam que também devem excluí-lo.</li>
-      <li>A opção <strong>Configurações → Sincronização na nuvem → Excluir conta e dados</strong> remove sua conta, todos os aquários sincronizados, suas configurações e suas fotos imediatamente. As cópias nos backups diários da Supabase são eliminadas <strong>em até 7 dias</strong>.</li>
-      <li><strong>Sair da conta</strong> pausa a sincronização na nuvem. Seus dados na nuvem permanecem até que você os exclua.</li>
+      <li><strong>A exclusão de um aquário</strong> remove seu conteúdo e suas fotos do seu iCloud. Um pequeno marcador (um ID e a hora da exclusão, sem conteúdo) permanece para que seus outros dispositivos saibam que também devem excluí-lo.</li>
+      <li>A opção <strong>Configurações → Sincronização na nuvem → Excluir dados do TankLog do iCloud</strong> remove tudo o que o TankLog armazenou no seu iCloud, em todos os seus dispositivos. Os aquários no seu dispositivo continuam lá.</li>
+      <li><strong>Desativar a sincronização</strong> a coloca em pausa. Sua cópia no iCloud permanece até que você a exclua.</li>
       </ul>
 
       <h2>Comprando a Sincronização na nuvem</h2>
       <ul>
       <li><strong>A Apple</strong> processa o pagamento. Nunca temos acesso aos detalhes do seu cartão nem à sua Conta Apple.</li>
-      <li><strong>A RevenueCat</strong> (EUA) confirma sua compra para que a Sincronização na nuvem seja ativada em seus dispositivos. Ela recebe os detalhes da compra, um ID anônimo criado no seu dispositivo e informações técnicas básicas (versão do aplicativo, tipo de dispositivo, país). O TankLog entra em contato com a RevenueCat <strong>apenas</strong> quando você compra ou restaura a Sincronização na nuvem, ou em um dispositivo que já tenha adquirido o serviço. Para usuários gratuitos, o aplicativo nunca se conecta à RevenueCat.</li>
-      <li>Base jurídica: prestação do serviço que você adquiriu (GDPR, Art. 6(1)(b)). A RevenueCat mantém registros de compra de acordo com sua própria política; solicite-nos e providenciaremos a exclusão desses registros.</li>
+      <li>O TankLog pergunta à Apple, <strong>no seu dispositivo</strong>, se você comprou a Sincronização na nuvem, para poder desbloqueá-la. Não recebemos nenhuma informação pessoal com isso; a Apple fornece aos desenvolvedores apenas relatórios de vendas resumidos.</li>
+      <li>Para pedir um <strong>reembolso</strong>, use a página <a href="https://reportaproblem.apple.com">Relatar um problema</a> da Apple.</li>
       </ul>
 
       <h2>Envio de feedback</h2>
       <ul>
-      <li>A opção <strong>Enviar comentários</strong> envia o tipo de mensagem, o assunto, sua mensagem e a versão do aplicativo. Ela não envia seu nome nem endereço de e-mail, a menos que você os digite. O formulário é processado pelo <strong>Formspree</strong> (EUA), que pode registrar detalhes técnicos, como seu endereço IP, para bloquear spam, e é encaminhado para nossa caixa de entrada de suporte no <strong>Gmail</strong> (Google).</li>
+      <li>A opção <strong>Enviar comentários</strong> envia o tipo de mensagem, o assunto, sua mensagem, a versão do aplicativo e, se você quiser adicioná-lo, seu endereço de e-mail, que usamos apenas para responder a você. Ela não envia seu nome, a menos que você o digite. O formulário é processado pelo <strong>Formspree</strong> (EUA), que pode registrar detalhes técnicos, como seu endereço IP, para bloquear spam, e é encaminhado para nossa caixa de entrada de suporte no <strong>Gmail</strong> (Google).</li>
       <li>Se você <strong>nos enviar um e-mail</strong>, veremos seu endereço de e-mail e sua mensagem.</li>
       <li>Mantemos as mensagens apenas pelo tempo necessário para ajudá-lo e melhorar o aplicativo. Base jurídica: nosso interesse legítimo em responder a você e melhorar o TankLog (GDPR, Art. 6(1)(f)).</li>
       </ul>
@@ -632,23 +599,21 @@
       <h2>Quem trata seus dados</h2>
       <table>
       <tr><th>Serviço</th><th>Para que</th><th>Onde</th></tr>
-      <tr><td>Supabase</td><td>Armazenamento e login da Sincronização na nuvem</td><td>Reino Unido</td></tr>
-      <tr><td>Apple</td><td>Faça login com a Apple e pagamentos</td><td>Mundial</td></tr>
-      <tr><td>RevenueCat</td><td>Confirma compras da Sincronização na nuvem</td><td>EUA</td></tr>
+      <tr><td>Apple</td><td>iCloud (armazenamento da Sincronização na nuvem) e pagamentos</td><td>Mundial</td></tr>
       <tr><td>Formspree</td><td>Entrega o feedback enviado pelo aplicativo</td><td>EUA</td></tr>
       <tr><td>Google (Gmail)</td><td>Caixa de entrada de suporte</td><td>EUA</td></tr>
       </table>
-      <p>A UE reconhece que o Reino Unido oferece proteção equivalente. As transferências para os EUA são protegidas pelas salvaguardas previstas nos termos de tratamento de dados de cada empresa, como as cláusulas contratuais padrão da UE. <strong>Nenhuma delas pode utilizar seus dados para fins próprios</strong>, e nós nunca os vendemos nem compartilhamos com terceiros.</p>
+      <p>As transferências para os EUA são protegidas pelas salvaguardas previstas nos termos de tratamento de dados de cada empresa, como as cláusulas contratuais padrão da UE. <strong>A Formspree e o Google não podem usar suas mensagens para fins próprios</strong>, e nós nunca as vendemos nem compartilhamos com terceiros.</p>
 
       <h2>Seus direitos</h2>
       <p>Não importa onde você more, você pode <strong>visualizar</strong> seus dados, <strong>exportá-los</strong> (Configurações → Exportar), <strong>corrigi-los</strong>, <strong>excluí-los</strong>, <strong>restringir</strong> ou <strong>se opor à</strong> forma como são utilizados e <strong>apresentar uma reclamação</strong> a uma autoridade de proteção de dados (no Reino Unido, a ICO; na UE, a autoridade do seu país).</p>
-      <p>Você mesmo pode realizar a maior parte dessas ações no aplicativo. Para qualquer outra questão, envie <a href="mailto:tanklog.support@gmail.com">um e-mail para tanklog.support@gmail.com</a>. Respondemos em até um mês. Como não sabemos seu nome nem seu endereço de e-mail, podemos solicitar informações que nos ajudem a localizar sua conta. Não vendemos nem “compartilhamos” informações pessoais, conforme definido pela legislação da Califórnia.</p>
+      <p>Os dados dos seus aquários ficam no seu dispositivo e no seu próprio iCloud, então você os controla diretamente no app. Os únicos dados pessoais que guardamos são os feedbacks que você nos enviou. Para vê-los ou pedir a exclusão, envie <a href="mailto:tanklog.support@gmail.com">um e-mail para tanklog.support@gmail.com</a>. Respondemos em até um mês. Não vendemos nem “compartilhamos” informações pessoais, conforme definido pela legislação da Califórnia.</p>
 
       <h2>Segurança</h2>
-      <p>Os dados são criptografados em trânsito (HTTPS) e armazenados criptografados pela Supabase. Cada conta tem acesso apenas aos seus próprios dados e fotos. Com o “Faça login com a Apple”, nunca lidamos com senhas.</p>
+      <p>Seus dados no dispositivo são protegidos pelo iOS. A Sincronização na nuvem usa a segurança do iCloud da Apple: os dados são criptografados em trânsito e nos servidores da Apple, e somente a sua Conta Apple tem acesso a eles. O TankLog nunca lida com senhas.</p>
 
       <h2>Crianças</h2>
-      <p>O TankLog é destinado ao público em geral. Sem a Sincronização na nuvem, ele não coleta nada de ninguém, incluindo crianças. A Sincronização na nuvem não se destina a crianças menores de 13 anos (ou menores de 16 anos na UE e no Reino Unido) sem a permissão dos pais. Se você acredita que uma criança nos forneceu dados, envie-nos um e-mail e nós os excluiremos.</p>
+      <p>O TankLog é destinado ao público em geral e não coleta nada de ninguém, incluindo crianças, exceto o feedback que alguém decida enviar. Se você acredita que uma criança nos enviou informações pessoais, envie-nos um e-mail e nós as excluiremos.</p>
 
       <h2>Alterações nesta política</h2>
       <p>Se esta política for alterada, atualizaremos esta página. Se uma alteração afetar a forma como seus dados são utilizados, informaremos você primeiro no aplicativo.</p>
@@ -656,7 +621,7 @@
       <h2>Contato</h2>
       <p><a href="mailto:tanklog.support@gmail.com">tanklog.support@gmail.com</a></p>
       <hr>
-      <p><a href="cloud-sync-terms.html">Termos da Sincronização na nuvem</a></p>
+      <p>O TankLog é licenciado de acordo com o <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrato de licença padrão da Apple (EULA)</a>.</p>
       <p style="font-size:0.75rem; color:#475569;">© 2026 TankLog: Aquascape · Chris Dominguez</p>
     </div>
 
